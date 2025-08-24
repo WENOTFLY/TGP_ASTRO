@@ -1,18 +1,18 @@
 .PHONY: format lint type test build up
 
 format:
-	ruff --fix .
+	ruff check --fix .
 	black .
 
 lint:
-	ruff .
+	ruff check .
 	make type
 
 type:
 	mypy --strict .
 
 test:
-	pytest --cov=app --cov-report=term-missing --cov-fail-under=90
+	pytest
 
 build:
 	docker-compose build

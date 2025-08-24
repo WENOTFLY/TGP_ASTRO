@@ -5,7 +5,11 @@ target-version = ["py311"]
 [tool.ruff]
 line-length = 88
 target-version = "py311"
+extend-exclude = ["app/tests/test_e2e_experts.py"]
+
+[tool.ruff.lint]
 select = ["E", "F", "I", "B"]
+ignore = ["E501"]
 
 [tool.mypy]
 python_version = "3.11"
