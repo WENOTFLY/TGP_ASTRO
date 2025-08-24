@@ -23,7 +23,11 @@ All assets are validated on startup and indexed in the database.
 ## Runbook
 - **Webhook errors**: check logs, verify Telegram token, redeploy if needed.
 - **Asset validation failure**: run `make ingest` and inspect `/admin/decks` for details.
+- **LLM failure**: check `Verifier` logs; fallback responses do not consume quota.
+- **Payment failure**: inspect Stars invoices and entitlements; quota stays unchanged.
 - **High latency**: check worker queue and Redis status, scale workers if required.
+
+See [docs/negative_cases.md](docs/negative_cases.md) for detailed scenarios.
 
 ## FAQ and Admin panel
 See [docs/FAQ.md](docs/FAQ.md) for adding new decks, runes or lexicons and for admin panel usage.
