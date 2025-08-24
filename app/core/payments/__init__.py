@@ -114,9 +114,20 @@ async def handle_successful_payment(message: types.Message, session: Session) ->
     sp = message.successful_payment
     if sp is None:
         return
+
     order = session.get(Order, int(sp.invoice_payload))
     if order is None:
         return
+
+    if order.status == "paid":
+        return
+
+    existing = session.get(Entitlement, order.id)
+    if existing is not None:
+        order.status = "paid"
+        session.commit()
+        return
+
     order.status = "paid"
     order.external_id = sp.telegram_payment_charge_id
     product = PRODUCT_CATALOG[order.product]
@@ -126,7 +137,7 @@ async def handle_successful_payment(message: types.Message, session: Session) ->
         else None
     )
     entitlement = Entitlement(
-        id=int(datetime.utcnow().timestamp() * 1000),
+        id=order.id,
         user_id=order.user_id,
         product=order.product,
         status="active",

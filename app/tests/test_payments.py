@@ -89,6 +89,32 @@ def test_successful_payment_creates_entitlement() -> None:
     assert ent.quota_total == PRODUCT_CATALOG[order.product].quota
 
 
+def test_successful_payment_is_idempotent() -> None:
+    session = _setup_session()
+    user = _create_user(session)
+    order = create_order(session, user_id=user.id, product_id="pack_3")
+    sp = types.SuccessfulPayment(
+        currency="XTR",
+        total_amount=order.amount_xtr,
+        invoice_payload=str(order.id),
+        telegram_payment_charge_id="tpc",
+        provider_payment_charge_id="ppc",
+    )
+    msg = types.Message(
+        message_id=1,
+        date=datetime.now(),
+        chat=types.Chat(id=1, type="private"),
+        successful_payment=sp,
+    )
+    asyncio.run(handle_successful_payment(msg, session))
+    asyncio.run(handle_successful_payment(msg, session))
+    ents = session.query(Entitlement).all()
+    assert len(ents) == 1
+    updated = session.get(Order, order.id)
+    assert updated is not None
+    assert updated.status == "paid"
+
+
 def test_refund_order_cancels_entitlement() -> None:
     session = _setup_session()
     user = _create_user(session)
