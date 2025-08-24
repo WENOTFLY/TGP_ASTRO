@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import swisseph as swe
 
 from app.core.plugins import Plugin
+from app.experts.messages import get_actions, get_cta, get_disclaimers
 from app.nlp.verifier import Verifier
 from app.nlp.writer import compose_answer
 
@@ -181,14 +182,8 @@ def write(data: dict[str, Any]) -> dict[str, Any]:
     moon = next(e for e in table if e.planet == "Moon")
     summary = f"Sun in {sun.sign}, Moon in {moon.sign}"
     details = "\n".join(f"{e.planet}: {e.sign} {e.degree:.2f}°" for e in table)
-    actions = [
-        "Reflect on these planetary placements.",
-        "Consider how aspects influence your chart.",
-        "Use this insight for self-awareness.",
-    ]
-    disclaimers = []
-    if solar:
-        disclaimers.append("Birth time unknown; chart is calculated for solar noon.")
+    actions = get_actions(PLUGIN_ID, locale)
+    disclaimers = get_disclaimers(PLUGIN_ID, locale) if solar else []
 
     facts = {
         **data["facts"],
@@ -214,7 +209,7 @@ def verify(data: dict[str, Any]) -> bool:
 
 
 def cta(locale: str) -> list[str]:
-    return ["Calculate again", "Share"]
+    return get_cta(PLUGIN_ID, locale)
 
 
 plugin = Plugin(

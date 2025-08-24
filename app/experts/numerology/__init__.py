@@ -10,6 +10,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 from app.core.compose import save_image
 from app.core.plugins import Plugin
+from app.experts.messages import get_actions, get_cta
 from app.nlp.verifier import Verifier
 from app.nlp.writer import compose_answer
 
@@ -42,7 +43,11 @@ def _reduce(n: int) -> int:
 
 
 def _letters_value(
-    name: str, alphabet: Dict[str, int], *, vowels: bool = False, consonants: bool = False
+    name: str,
+    alphabet: Dict[str, int],
+    *,
+    vowels: bool = False,
+    consonants: bool = False,
 ) -> int:
     vowels_set = set("AEIOUY")
     total = 0
@@ -93,9 +98,7 @@ def _calc_challenges(birth: date) -> List[int]:
 
 def _calc_numbers(name: str, birth: date, target: date, locale: str) -> Dict[str, Any]:
     alphabet = _load_alphabet(locale)
-    life_path = _reduce(
-        sum(int(d) for d in birth.strftime("%Y%m%d") if d.isdigit())
-    )
+    life_path = _reduce(sum(int(d) for d in birth.strftime("%Y%m%d") if d.isdigit()))
     expression = _letters_value(name, alphabet)
     soul = _letters_value(name, alphabet, vowels=True)
     personality = _letters_value(name, alphabet, consonants=True)
@@ -242,11 +245,7 @@ def write(data: dict[str, Any]) -> dict[str, Any]:
     for i, val in enumerate(nums["challenges"], start=1):
         sections.append({"title": f"Challenge {i}", "body_md": f"Challenge {i}: {val}"})
     summary = f"Life Path {nums['life_path']}, Expression {nums['expression']}"
-    actions = [
-        "Reflect on these numbers",
-        "Keep a journal",
-        "Share with a friend",
-    ]
+    actions = get_actions(PLUGIN_ID, locale)
     facts: Dict[str, Any] = {k: nums[k] for k in core_keys}
     for i, v in enumerate(nums["pinnacles"], start=1):
         facts[f"pinnacle_{i}"] = v
@@ -272,7 +271,7 @@ def verify(data: dict[str, Any]) -> bool:
 
 
 def cta(locale: str) -> list[str]:
-    return ["Try another date", "Share"]
+    return get_cta(PLUGIN_ID, locale)
 
 
 plugin = Plugin(
