@@ -1,0 +1,29 @@
+{
+  "cat": {
+    "synonyms": ["cat", "kitten", "kitty"],
+    "display": {"en": "Cat", "ru": "Кот"},
+    "meaning": {
+      "en": "Independence and curiosity.",
+      "ru": "Независимость и любопытство."
+    },
+    "file": "cat.png"
+  },
+  "water": {
+    "synonyms": ["water", "river", "sea"],
+    "display": {"en": "Water", "ru": "Вода"},
+    "meaning": {
+      "en": "Emotions and the flow of life.",
+      "ru": "Эмоции и течение жизни."
+    },
+    "file": "water.png"
+  },
+  "falling": {
+    "synonyms": ["falling", "fall", "fell"],
+    "display": {"en": "Falling", "ru": "Падение"},
+    "meaning": {
+      "en": "Loss of control or fear of failure.",
+      "ru": "Потеря контроля или страх неудачи."
+    },
+    "file": "falling.png"
+  }
+}
