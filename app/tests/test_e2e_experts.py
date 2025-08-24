@@ -29,21 +29,27 @@ def _create_image(path: Path, size: tuple[int, int] = (200, 300)) -> None:
 
 
 @pytest.fixture(scope="module")
-def session_and_assets(tmp_path_factory: pytest.TempPathFactory) -> tuple[Session, Path]:
+def session_and_assets(
+    tmp_path_factory: pytest.TempPathFactory,
+) -> tuple[Session, Path]:
     tmp_assets = tmp_path_factory.mktemp("assets")
 
     # Tarot deck
-    tarot_dir = tmp_assets / "tarot" / "tarot_sample"
+    tarot_dir = tmp_assets / "tarot" / "tarot_testdeck"
     tarot_cards = tarot_dir / "cards"
     tarot_cards.mkdir(parents=True)
     _create_image(tarot_dir / "back.png", size=(300, 500))
     for i in range(3):
         _create_image(tarot_cards / f"{i}.png", size=(300, 500))
     tarot_manifest = {
-        "deck_id": "tarot_sample",
+        "deck_id": "tarot_testdeck",
         "name": {"en": "Sample"},
         "type": "tarot",
-        "image": {"aspect_ratio": "3:5", "allow_reversed": True, "default_back": "back.png"},
+        "image": {
+            "aspect_ratio": "3:5",
+            "allow_reversed": True,
+            "default_back": "back.png",
+        },
         "cards": [
             {
                 "key": f"c{i}",
@@ -59,14 +65,14 @@ def session_and_assets(tmp_path_factory: pytest.TempPathFactory) -> tuple[Sessio
     (tarot_dir / "deck.json").write_text(json.dumps(tarot_manifest), encoding="utf-8")
 
     # Lenormand deck
-    leno_dir = tmp_assets / "lenormand" / "leno_sample"
+    leno_dir = tmp_assets / "lenormand" / "leno_testdeck"
     leno_cards = leno_dir / "cards"
     leno_cards.mkdir(parents=True)
     _create_image(leno_dir / "back.png", size=(300, 500))
     for i in range(3):
         _create_image(leno_cards / f"{i}.png", size=(300, 500))
     leno_manifest = {
-        "deck_id": "leno_sample",
+        "deck_id": "leno_testdeck",
         "name": {"en": "Sample"},
         "type": "lenormand",
         "image": {"aspect_ratio": "3:5", "default_back": "back.png"},
@@ -82,17 +88,21 @@ def session_and_assets(tmp_path_factory: pytest.TempPathFactory) -> tuple[Sessio
     (leno_dir / "deck.json").write_text(json.dumps(leno_manifest), encoding="utf-8")
 
     # Runes set
-    runes_dir = tmp_assets / "runes" / "runes_sample"
+    runes_dir = tmp_assets / "runes" / "runes_testdeck"
     runes_items = runes_dir / "runes"
     runes_items.mkdir(parents=True)
     _create_image(runes_dir / "back.png", size=(200, 200))
     for i in range(3):
         _create_image(runes_items / f"{i}.png", size=(200, 200))
     runes_manifest = {
-        "set_id": "runes_sample",
+        "set_id": "runes_testdeck",
         "name": {"en": "Sample"},
         "type": "runes",
-        "image": {"aspect_ratio": "1:1", "allow_reversed": True, "default_back": "back.png"},
+        "image": {
+            "aspect_ratio": "1:1",
+            "allow_reversed": True,
+            "default_back": "back.png",
+        },
         "runes": [
             {
                 "key": f"r{i}",
@@ -129,12 +139,25 @@ def session_and_assets(tmp_path_factory: pytest.TempPathFactory) -> tuple[Sessio
 
 
 EXPERT_CASES = [
-    (tarot.plugin, {"deck_id": "tarot_sample", "spread_id": "tarot_three_ppf", "question": "Q"}),
-    (lenormand.plugin, {"deck_id": "leno_sample", "spread_id": "leno_three_line", "question": "Q"}),
-    (runes.plugin, {"set_id": "runes_sample", "spread_id": "runes_one", "question": "Q"}),
+    (
+        tarot.plugin,
+        {"deck_id": "tarot_testdeck", "spread_id": "tarot_three_ppf", "question": "Q"},
+    ),
+    (
+        lenormand.plugin,
+        {"deck_id": "leno_testdeck", "spread_id": "leno_three_line", "question": "Q"},
+    ),
+    (
+        runes.plugin,
+        {"set_id": "runes_testdeck", "spread_id": "runes_one", "question": "Q"},
+    ),
     (
         numerology.plugin,
-        {"full_name": "John Doe", "birth_date": "2000-01-02", "target_date": "2024-01-01"},
+        {
+            "full_name": "John Doe",
+            "birth_date": "2000-01-02",
+            "target_date": "2024-01-01",
+        },
     ),
     (
         astrology.plugin,

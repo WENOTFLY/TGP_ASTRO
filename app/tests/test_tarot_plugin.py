@@ -28,7 +28,7 @@ def _setup_session() -> Session:
 
 def test_tarot_pipeline(tmp_path: Path) -> None:
     ASSET_CACHE.clear()
-    deck_dir = tmp_path / "tarot" / "sample"
+    deck_dir = tmp_path / "tarot" / "testdeck"
     cards_dir = deck_dir / "cards"
     cards_dir.mkdir(parents=True)
     _create_image(deck_dir / "back.png")
@@ -36,7 +36,7 @@ def test_tarot_pipeline(tmp_path: Path) -> None:
     for i in range(3):
         _create_image(cards_dir / f"{i}.png")
     manifest = {
-        "deck_id": "sample",
+        "deck_id": "testdeck",
         "name": {"en": "Sample", "ru": "Пример"},
         "type": "tarot",
         "image": {
@@ -61,7 +61,7 @@ def test_tarot_pipeline(tmp_path: Path) -> None:
     load_assets(tmp_path, session)
 
     params = {
-        "deck_id": "sample",
+        "deck_id": "testdeck",
         "spread_id": "tarot_three_ppf",
         "user_id": 42,
         "draw_date": date(2024, 1, 1),

@@ -29,13 +29,13 @@ def _setup_session() -> Session:
 def test_load_assets(tmp_path: Path) -> None:
     ASSET_CACHE.clear()
     assets_root = tmp_path
-    deck_dir = assets_root / "tarot" / "sample"
+    deck_dir = assets_root / "tarot" / "testdeck"
     cards_dir = deck_dir / "cards"
     cards_dir.mkdir(parents=True)
     _create_image(deck_dir / "back.png")
     _create_image(cards_dir / "0.png")
     manifest = {
-        "deck_id": "sample",
+        "deck_id": "testdeck",
         "name": {"en": "Sample", "ru": "Пример"},
         "type": "tarot",
         "image": {
@@ -59,7 +59,7 @@ def test_load_assets(tmp_path: Path) -> None:
     load_assets(assets_root, session)
     decks = session.query(Deck).all()
     assert len(decks) == 1
-    assert "sample" in ASSET_CACHE
+    assert "testdeck" in ASSET_CACHE
     assert (deck_dir / "thumbs" / "0.png").exists()
     assert (deck_dir / "thumbs" / "back.png").exists()
 
