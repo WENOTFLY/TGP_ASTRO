@@ -21,7 +21,7 @@ def _create_image(path: Path, size: tuple[int, int] = (300, 500)) -> None:
 
 def _setup_session() -> Session:
     engine = create_engine("sqlite:///:memory:", future=True)
-    models.JSONB = SQLITE_JSON
+    models.JSONB = SQLITE_JSON  # type: ignore[attr-defined]
     Base.metadata.create_all(engine)
     return sessionmaker(bind=engine, future=True)()
 

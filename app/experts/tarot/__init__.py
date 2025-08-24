@@ -3,7 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
-from typing import Any, Dict, List, cast
+from typing import Any, Dict, List
 
 from PIL import Image
 
@@ -200,7 +200,7 @@ def write(data: dict[str, Any]) -> dict[str, Any]:
     }
     verifier = Verifier()
     output = verifier.ensure_verified(compose_answer, facts, locale)
-    result = cast(dict[str, Any], output)
+    result: dict[str, Any] = output
     result["facts"] = data["facts"]
     return result
 
