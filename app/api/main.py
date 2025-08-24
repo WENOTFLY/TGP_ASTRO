@@ -7,11 +7,17 @@ from typing import Any
 from aiogram import Bot
 from aiogram.types import Update
 from fastapi import APIRouter, Depends, FastAPI, HTTPException
+from opentelemetry import trace
+from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
+from opentelemetry.sdk.trace import TracerProvider
+from opentelemetry.sdk.trace.export import BatchSpanProcessor
+from prometheus_fastapi_instrumentator import Instrumentator
 from pydantic import BaseModel
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.bot import dp  # type: ignore[import]
+from app.bot import dp
 from app.config import get_settings
 from app.core.assets import ASSET_CACHE
 from app.core.telemetry import TelemetryEvent
@@ -30,6 +36,20 @@ admin_router = APIRouter(prefix="/admin")
 
 settings = get_settings()
 bot: Bot | None = Bot(settings.telegram_token) if settings.telegram_token else None
+
+
+def _setup_observability(app: FastAPI) -> None:
+    Instrumentator().instrument(app).expose(app)
+
+    provider = TracerProvider()
+    exporter = (
+        OTLPSpanExporter(endpoint=settings.otlp_endpoint)
+        if settings.otlp_endpoint
+        else OTLPSpanExporter()
+    )
+    provider.add_span_processor(BatchSpanProcessor(exporter))
+    trace.set_tracer_provider(provider)
+    FastAPIInstrumentor().instrument_app(app)
 
 
 @router.get("/health")
@@ -130,6 +150,7 @@ async def admin_broadcast(
 
 def create_app() -> FastAPI:
     app = FastAPI()
+    _setup_observability(app)
     app.include_router(router)
     app.include_router(admin_router)
 
