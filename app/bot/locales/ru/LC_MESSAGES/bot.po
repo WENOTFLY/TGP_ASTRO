@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Welcome! Use the menu below to choose an expert or view tariffs."
+msgstr "Добро пожаловать! Используйте меню ниже, чтобы выбрать эксперта или тариф."
+
+msgid "Help: This bot provides astrological readings and other services. Use the menu or commands."
+msgstr "Помощь: этот бот предоставляет астрологические и другие консультации. Используйте меню или команды."
+
+msgid "Profile: no data available."
+msgstr "Профиль: данные отсутствуют."
+
+msgid "History: no records."
+msgstr "История: записей нет."
+
+msgid "🃏 Tarot"
+msgstr "🃏 Таролог"
+
+msgid "♣ Lenormand"
+msgstr "♣ Ленорман"
+
+msgid "ᚱ Runes"
+msgstr "ᚱ Рунолог"
+
+msgid "✨ Astrology"
+msgstr "✨ Астролог"
+
+msgid "🌙 Dreams"
+msgstr "🌙 Сны"
+
+msgid "✍️ Copywriter"
+msgstr "✍️ Копирайтер"
+
+msgid "🤖 Assistant"
+msgstr "🤖 Ассистент"
+
+msgid "🔢 Numerology"
+msgstr "🔢 Нумеролог"
+
+msgid "💎 Premium/Payment"
+msgstr "💎 Премиум/Оплата"
+
+msgid "👤 Profile/History"
+msgstr "👤 Профиль/История"

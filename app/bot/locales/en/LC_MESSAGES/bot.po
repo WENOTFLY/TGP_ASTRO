@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Welcome! Use the menu below to choose an expert or view tariffs."
+msgstr "Welcome! Use the menu below to choose an expert or view tariffs."
+
+msgid "Help: This bot provides astrological readings and other services. Use the menu or commands."
+msgstr "Help: This bot provides astrological readings and other services. Use the menu or commands."
+
+msgid "Profile: no data available."
+msgstr "Profile: no data available."
+
+msgid "History: no records."
+msgstr "History: no records."
+
+msgid "🃏 Tarot"
+msgstr "🃏 Tarot"
+
+msgid "♣ Lenormand"
+msgstr "♣ Lenormand"
+
+msgid "ᚱ Runes"
+msgstr "ᚱ Runes"
+
+msgid "✨ Astrology"
+msgstr "✨ Astrology"
+
+msgid "🌙 Dreams"
+msgstr "🌙 Dreams"
+
+msgid "✍️ Copywriter"
+msgstr "✍️ Copywriter"
+
+msgid "🤖 Assistant"
+msgstr "🤖 Assistant"
+
+msgid "🔢 Numerology"
+msgstr "🔢 Numerology"
+
+msgid "💎 Premium/Payment"
+msgstr "💎 Premium/Payment"
+
+msgid "👤 Profile/History"
+msgstr "👤 Profile/History"
