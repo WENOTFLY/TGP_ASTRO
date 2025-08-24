@@ -70,6 +70,7 @@ def test_runes_pipeline(tmp_path: Path) -> None:
 
     conf = ASSET_CACHE["sample"]["config"]
     by_key = {r["key"]: r for r in conf["runes"]}
+    assert any(r["reversed"] for r in prep1["runes"])
     for r in prep1["runes"]:
         if not by_key[r["key"]]["can_reverse"]:
             assert not r["reversed"]
