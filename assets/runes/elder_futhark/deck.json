@@ -9,7 +9,8 @@
     "width": 60,
     "height": 100,
     "aspect_ratio": "3:5",
-    "default_back": "back.png"
+    "default_back": "back.png",
+    "allow_reversed": true
   },
   "license": "CC0-1.0",
   "runes": [
@@ -67,7 +68,8 @@
         "en": "Gebo",
         "ru": "Гебо"
       },
-      "file": "gebo.png"
+      "file": "gebo.png",
+      "can_reverse": false
     },
     {
       "key": "wunjo",
@@ -83,7 +85,8 @@
         "en": "Hagalaz",
         "ru": "Хагалаз"
       },
-      "file": "hagalaz.png"
+      "file": "hagalaz.png",
+      "can_reverse": false
     },
     {
       "key": "nauthiz",
@@ -91,7 +94,8 @@
         "en": "Nauthiz",
         "ru": "Наутиз"
       },
-      "file": "nauthiz.png"
+      "file": "nauthiz.png",
+      "can_reverse": false
     },
     {
       "key": "isa",
@@ -99,7 +103,8 @@
         "en": "Isa",
         "ru": "Иса"
       },
-      "file": "isa.png"
+      "file": "isa.png",
+      "can_reverse": false
     },
     {
       "key": "jera",
@@ -107,7 +112,8 @@
         "en": "Jera",
         "ru": "Йера"
       },
-      "file": "jera.png"
+      "file": "jera.png",
+      "can_reverse": false
     },
     {
       "key": "eihwaz",
@@ -115,7 +121,8 @@
         "en": "Eihwaz",
         "ru": "Эйваз"
       },
-      "file": "eihwaz.png"
+      "file": "eihwaz.png",
+      "can_reverse": false
     },
     {
       "key": "perthro",
@@ -139,7 +146,8 @@
         "en": "Sowilo",
         "ru": "Соул"
       },
-      "file": "sowilo.png"
+      "file": "sowilo.png",
+      "can_reverse": false
     },
     {
       "key": "tiwaz",
@@ -187,7 +195,8 @@
         "en": "Ingwaz",
         "ru": "Ингуз"
       },
-      "file": "ingwaz.png"
+      "file": "ingwaz.png",
+      "can_reverse": false
     },
     {
       "key": "dagaz",
@@ -195,7 +204,8 @@
         "en": "Dagaz",
         "ru": "Дагаз"
       },
-      "file": "dagaz.png"
+      "file": "dagaz.png",
+      "can_reverse": false
     },
     {
       "key": "othala",
@@ -203,7 +213,8 @@
         "en": "Othala",
         "ru": "Одал"
       },
-      "file": "othala.png"
+      "file": "othala.png",
+      "can_reverse": false
     }
   ]
 }
