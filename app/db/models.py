@@ -4,6 +4,7 @@ from datetime import date, datetime, time
 from typing import Any
 
 from sqlalchemy import (
+    JSON,
     BigInteger,
     Date,
     DateTime,
@@ -15,7 +16,6 @@ from sqlalchemy import (
     desc,
     func,
 )
-from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column
 
 from .base import Base
@@ -103,10 +103,10 @@ class Usage(Base):
 class Deck(Base):
     __tablename__ = "decks"
 
-    id: Mapped[int] = mapped_column(BigInteger, primary_key=True)
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     type: Mapped[str] = mapped_column(String, nullable=False)
-    name_json: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
-    config_json: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
+    name_json: Mapped[dict[str, Any]] = mapped_column(JSON, nullable=False)
+    config_json: Mapped[dict[str, Any]] = mapped_column(JSON, nullable=False)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), nullable=False
     )
@@ -121,7 +121,7 @@ class Draw(Base):
     deck_id: Mapped[str] = mapped_column(String, nullable=False)
     spread_id: Mapped[str] = mapped_column(String, nullable=False)
     seed: Mapped[str] = mapped_column(String, nullable=False)
-    facts_json: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
+    facts_json: Mapped[dict[str, Any]] = mapped_column(JSON, nullable=False)
     image_url: Mapped[str | None] = mapped_column(String)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), nullable=False
@@ -138,12 +138,12 @@ class Reading(Base):
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"))
     expert: Mapped[str] = mapped_column(String, nullable=False)
-    input_json: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
-    facts_json: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
+    input_json: Mapped[dict[str, Any]] = mapped_column(JSON, nullable=False)
+    facts_json: Mapped[dict[str, Any]] = mapped_column(JSON, nullable=False)
     text_md: Mapped[str | None] = mapped_column(String)
     pdf_url: Mapped[str | None] = mapped_column(String)
     images_json: Mapped[dict[str, Any] | list[Any]] = mapped_column(
-        JSONB, nullable=False
+        JSON, nullable=False
     )
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), nullable=False
@@ -158,7 +158,7 @@ class Event(Base):
         ForeignKey("users.id", ondelete="SET NULL")
     )
     event: Mapped[str] = mapped_column(String, nullable=False)
-    props_json: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
+    props_json: Mapped[dict[str, Any]] = mapped_column(JSON, nullable=False)
     ts: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), nullable=False
     )
