@@ -81,7 +81,14 @@ def load_assets(
             if not back_path.exists():
                 raise AssetValidationError(f"Missing back image for {deck_id}")
             _check_image(back_path, ratio)
-            items_key = "cards" if "cards" in manifest else "runes"
+            if "cards" in manifest:
+                items_key = "cards"
+            elif "runes" in manifest:
+                items_key = "runes"
+            elif "signs" in manifest:
+                items_key = "signs"
+            else:
+                raise AssetValidationError(f"No items list in {manifest_path}")
             items = manifest.get(items_key)
             if not isinstance(items, list) or not items:
                 raise AssetValidationError(f"No {items_key} in {manifest_path}")

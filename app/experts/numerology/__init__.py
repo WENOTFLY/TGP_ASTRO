@@ -35,6 +35,12 @@ def _load_alphabet(locale: str) -> Dict[str, int]:
     return _ALPHABET_CACHE[locale]
 
 
+VOWELS: Dict[str, set[str]] = {
+    "en": set("AEIOUY"),
+    "ru": set("АЕЁИОУЫЭЮЯ"),
+}
+
+
 def _reduce(n: int) -> int:
     masters = set(_load_rules().get("master_numbers", []))
     while n not in masters and n >= 10:
@@ -45,11 +51,12 @@ def _reduce(n: int) -> int:
 def _letters_value(
     name: str,
     alphabet: Dict[str, int],
+    locale: str,
     *,
     vowels: bool = False,
     consonants: bool = False,
 ) -> int:
-    vowels_set = set("AEIOUY")
+    vowels_set = VOWELS.get(locale, VOWELS["en"])
     total = 0
     for ch in name.upper():
         if not ch.isalpha():
@@ -99,9 +106,9 @@ def _calc_challenges(birth: date) -> List[int]:
 def _calc_numbers(name: str, birth: date, target: date, locale: str) -> Dict[str, Any]:
     alphabet = _load_alphabet(locale)
     life_path = _reduce(sum(int(d) for d in birth.strftime("%Y%m%d") if d.isdigit()))
-    expression = _letters_value(name, alphabet)
-    soul = _letters_value(name, alphabet, vowels=True)
-    personality = _letters_value(name, alphabet, consonants=True)
+    expression = _letters_value(name, alphabet, locale)
+    soul = _letters_value(name, alphabet, locale, vowels=True)
+    personality = _letters_value(name, alphabet, locale, consonants=True)
     birthday = _reduce(birth.day)
     maturity = _reduce(life_path + expression)
 

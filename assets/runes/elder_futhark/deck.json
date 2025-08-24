@@ -1,0 +1,209 @@
+{
+  "type": "runes",
+  "deck_id": "elder_futhark",
+  "name": {
+    "en": "Elder Futhark",
+    "ru": "Старший Футарк"
+  },
+  "image": {
+    "width": 60,
+    "height": 100,
+    "aspect_ratio": "3:5",
+    "default_back": "back.png"
+  },
+  "license": "CC0-1.0",
+  "runes": [
+    {
+      "key": "fehu",
+      "display": {
+        "en": "Fehu",
+        "ru": "Феху"
+      },
+      "file": "fehu.png"
+    },
+    {
+      "key": "uruz",
+      "display": {
+        "en": "Uruz",
+        "ru": "Уруз"
+      },
+      "file": "uruz.png"
+    },
+    {
+      "key": "thurisaz",
+      "display": {
+        "en": "Thurisaz",
+        "ru": "Турисаз"
+      },
+      "file": "thurisaz.png"
+    },
+    {
+      "key": "ansuz",
+      "display": {
+        "en": "Ansuz",
+        "ru": "Ансуз"
+      },
+      "file": "ansuz.png"
+    },
+    {
+      "key": "raidho",
+      "display": {
+        "en": "Raidho",
+        "ru": "Райдо"
+      },
+      "file": "raidho.png"
+    },
+    {
+      "key": "kenaz",
+      "display": {
+        "en": "Kenaz",
+        "ru": "Кеназ"
+      },
+      "file": "kenaz.png"
+    },
+    {
+      "key": "gebo",
+      "display": {
+        "en": "Gebo",
+        "ru": "Гебо"
+      },
+      "file": "gebo.png"
+    },
+    {
+      "key": "wunjo",
+      "display": {
+        "en": "Wunjo",
+        "ru": "Вуньо"
+      },
+      "file": "wunjo.png"
+    },
+    {
+      "key": "hagalaz",
+      "display": {
+        "en": "Hagalaz",
+        "ru": "Хагалаз"
+      },
+      "file": "hagalaz.png"
+    },
+    {
+      "key": "nauthiz",
+      "display": {
+        "en": "Nauthiz",
+        "ru": "Наутиз"
+      },
+      "file": "nauthiz.png"
+    },
+    {
+      "key": "isa",
+      "display": {
+        "en": "Isa",
+        "ru": "Иса"
+      },
+      "file": "isa.png"
+    },
+    {
+      "key": "jera",
+      "display": {
+        "en": "Jera",
+        "ru": "Йера"
+      },
+      "file": "jera.png"
+    },
+    {
+      "key": "eihwaz",
+      "display": {
+        "en": "Eihwaz",
+        "ru": "Эйваз"
+      },
+      "file": "eihwaz.png"
+    },
+    {
+      "key": "perthro",
+      "display": {
+        "en": "Perthro",
+        "ru": "Пертро"
+      },
+      "file": "perthro.png"
+    },
+    {
+      "key": "algiz",
+      "display": {
+        "en": "Algiz",
+        "ru": "Альгиз"
+      },
+      "file": "algiz.png"
+    },
+    {
+      "key": "sowilo",
+      "display": {
+        "en": "Sowilo",
+        "ru": "Соул"
+      },
+      "file": "sowilo.png"
+    },
+    {
+      "key": "tiwaz",
+      "display": {
+        "en": "Tiwaz",
+        "ru": "Тейваз"
+      },
+      "file": "tiwaz.png"
+    },
+    {
+      "key": "berkano",
+      "display": {
+        "en": "Berkano",
+        "ru": "Беркана"
+      },
+      "file": "berkano.png"
+    },
+    {
+      "key": "ehwaz",
+      "display": {
+        "en": "Ehwaz",
+        "ru": "Эваз"
+      },
+      "file": "ehwaz.png"
+    },
+    {
+      "key": "mannaz",
+      "display": {
+        "en": "Mannaz",
+        "ru": "Манназ"
+      },
+      "file": "mannaz.png"
+    },
+    {
+      "key": "laguz",
+      "display": {
+        "en": "Laguz",
+        "ru": "Лагуз"
+      },
+      "file": "laguz.png"
+    },
+    {
+      "key": "ingwaz",
+      "display": {
+        "en": "Ingwaz",
+        "ru": "Ингуз"
+      },
+      "file": "ingwaz.png"
+    },
+    {
+      "key": "dagaz",
+      "display": {
+        "en": "Dagaz",
+        "ru": "Дагаз"
+      },
+      "file": "dagaz.png"
+    },
+    {
+      "key": "othala",
+      "display": {
+        "en": "Othala",
+        "ru": "Одал"
+      },
+      "file": "othala.png"
+    }
+  ]
+}

@@ -1,0 +1,641 @@
+{
+  "type": "tarot",
+  "deck_id": "rider_waite",
+  "name": {
+    "en": "Rider-Waite Tarot",
+    "ru": "Таро Райдера-Уэйта"
+  },
+  "image": {
+    "width": 60,
+    "height": 100,
+    "aspect_ratio": "3:5",
+    "default_back": "back.png"
+  },
+  "license": "CC0-1.0",
+  "cards": [
+    {
+      "key": "major_0_fool",
+      "display": {
+        "en": "The Fool",
+        "ru": "Шут"
+      },
+      "file": "00_fool.png"
+    },
+    {
+      "key": "major_1_magician",
+      "display": {
+        "en": "The Magician",
+        "ru": "Маг"
+      },
+      "file": "01_magician.png"
+    },
+    {
+      "key": "major_2_high_priestess",
+      "display": {
+        "en": "The High Priestess",
+        "ru": "Верховная Жрица"
+      },
+      "file": "02_high_priestess.png"
+    },
+    {
+      "key": "major_3_empress",
+      "display": {
+        "en": "The Empress",
+        "ru": "Императрица"
+      },
+      "file": "03_empress.png"
+    },
+    {
+      "key": "major_4_emperor",
+      "display": {
+        "en": "The Emperor",
+        "ru": "Император"
+      },
+      "file": "04_emperor.png"
+    },
+    {
+      "key": "major_5_hierophant",
+      "display": {
+        "en": "The Hierophant",
+        "ru": "Иерофант"
+      },
+      "file": "05_hierophant.png"
+    },
+    {
+      "key": "major_6_lovers",
+      "display": {
+        "en": "The Lovers",
+        "ru": "Влюбленные"
+      },
+      "file": "06_lovers.png"
+    },
+    {
+      "key": "major_7_chariot",
+      "display": {
+        "en": "The Chariot",
+        "ru": "Колесница"
+      },
+      "file": "07_chariot.png"
+    },
+    {
+      "key": "major_8_strength",
+      "display": {
+        "en": "Strength",
+        "ru": "Сила"
+      },
+      "file": "08_strength.png"
+    },
+    {
+      "key": "major_9_hermit",
+      "display": {
+        "en": "The Hermit",
+        "ru": "Отшельник"
+      },
+      "file": "09_hermit.png"
+    },
+    {
+      "key": "major_10_wheel_of_fortune",
+      "display": {
+        "en": "Wheel of Fortune",
+        "ru": "Колесо Фортуны"
+      },
+      "file": "10_wheel_of_fortune.png"
+    },
+    {
+      "key": "major_11_justice",
+      "display": {
+        "en": "Justice",
+        "ru": "Справедливость"
+      },
+      "file": "11_justice.png"
+    },
+    {
+      "key": "major_12_hanged_man",
+      "display": {
+        "en": "The Hanged Man",
+        "ru": "Повешенный"
+      },
+      "file": "12_hanged_man.png"
+    },
+    {
+      "key": "major_13_death",
+      "display": {
+        "en": "Death",
+        "ru": "Смерть"
+      },
+      "file": "13_death.png"
+    },
+    {
+      "key": "major_14_temperance",
+      "display": {
+        "en": "Temperance",
+        "ru": "Умеренность"
+      },
+      "file": "14_temperance.png"
+    },
+    {
+      "key": "major_15_devil",
+      "display": {
+        "en": "The Devil",
+        "ru": "Дьявол"
+      },
+      "file": "15_devil.png"
+    },
+    {
+      "key": "major_16_tower",
+      "display": {
+        "en": "The Tower",
+        "ru": "Башня"
+      },
+      "file": "16_tower.png"
+    },
+    {
+      "key": "major_17_star",
+      "display": {
+        "en": "The Star",
+        "ru": "Звезда"
+      },
+      "file": "17_star.png"
+    },
+    {
+      "key": "major_18_moon",
+      "display": {
+        "en": "The Moon",
+        "ru": "Луна"
+      },
+      "file": "18_moon.png"
+    },
+    {
+      "key": "major_19_sun",
+      "display": {
+        "en": "The Sun",
+        "ru": "Солнце"
+      },
+      "file": "19_sun.png"
+    },
+    {
+      "key": "major_20_judgement",
+      "display": {
+        "en": "Judgement",
+        "ru": "Суд"
+      },
+      "file": "20_judgement.png"
+    },
+    {
+      "key": "major_21_world",
+      "display": {
+        "en": "The World",
+        "ru": "Мир"
+      },
+      "file": "21_world.png"
+    },
+    {
+      "key": "wands_ace",
+      "display": {
+        "en": "Ace of Wands",
+        "ru": "Туз Жезлы"
+      },
+      "file": "wands_ace.png"
+    },
+    {
+      "key": "wands_two",
+      "display": {
+        "en": "Two of Wands",
+        "ru": "Двойка Жезлы"
+      },
+      "file": "wands_two.png"
+    },
+    {
+      "key": "wands_three",
+      "display": {
+        "en": "Three of Wands",
+        "ru": "Тройка Жезлы"
+      },
+      "file": "wands_three.png"
+    },
+    {
+      "key": "wands_four",
+      "display": {
+        "en": "Four of Wands",
+        "ru": "Четверка Жезлы"
+      },
+      "file": "wands_four.png"
+    },
+    {
+      "key": "wands_five",
+      "display": {
+        "en": "Five of Wands",
+        "ru": "Пятерка Жезлы"
+      },
+      "file": "wands_five.png"
+    },
+    {
+      "key": "wands_six",
+      "display": {
+        "en": "Six of Wands",
+        "ru": "Шестерка Жезлы"
+      },
+      "file": "wands_six.png"
+    },
+    {
+      "key": "wands_seven",
+      "display": {
+        "en": "Seven of Wands",
+        "ru": "Семерка Жезлы"
+      },
+      "file": "wands_seven.png"
+    },
+    {
+      "key": "wands_eight",
+      "display": {
+        "en": "Eight of Wands",
+        "ru": "Восьмерка Жезлы"
+      },
+      "file": "wands_eight.png"
+    },
+    {
+      "key": "wands_nine",
+      "display": {
+        "en": "Nine of Wands",
+        "ru": "Девятка Жезлы"
+      },
+      "file": "wands_nine.png"
+    },
+    {
+      "key": "wands_ten",
+      "display": {
+        "en": "Ten of Wands",
+        "ru": "Десятка Жезлы"
+      },
+      "file": "wands_ten.png"
+    },
+    {
+      "key": "wands_page",
+      "display": {
+        "en": "Page of Wands",
+        "ru": "Паж Жезлы"
+      },
+      "file": "wands_page.png"
+    },
+    {
+      "key": "wands_knight",
+      "display": {
+        "en": "Knight of Wands",
+        "ru": "Рыцарь Жезлы"
+      },
+      "file": "wands_knight.png"
+    },
+    {
+      "key": "wands_queen",
+      "display": {
+        "en": "Queen of Wands",
+        "ru": "Королева Жезлы"
+      },
+      "file": "wands_queen.png"
+    },
+    {
+      "key": "wands_king",
+      "display": {
+        "en": "King of Wands",
+        "ru": "Король Жезлы"
+      },
+      "file": "wands_king.png"
+    },
+    {
+      "key": "cups_ace",
+      "display": {
+        "en": "Ace of Cups",
+        "ru": "Туз Кубки"
+      },
+      "file": "cups_ace.png"
+    },
+    {
+      "key": "cups_two",
+      "display": {
+        "en": "Two of Cups",
+        "ru": "Двойка Кубки"
+      },
+      "file": "cups_two.png"
+    },
+    {
+      "key": "cups_three",
+      "display": {
+        "en": "Three of Cups",
+        "ru": "Тройка Кубки"
+      },
+      "file": "cups_three.png"
+    },
+    {
+      "key": "cups_four",
+      "display": {
+        "en": "Four of Cups",
+        "ru": "Четверка Кубки"
+      },
+      "file": "cups_four.png"
+    },
+    {
+      "key": "cups_five",
+      "display": {
+        "en": "Five of Cups",
+        "ru": "Пятерка Кубки"
+      },
+      "file": "cups_five.png"
+    },
+    {
+      "key": "cups_six",
+      "display": {
+        "en": "Six of Cups",
+        "ru": "Шестерка Кубки"
+      },
+      "file": "cups_six.png"
+    },
+    {
+      "key": "cups_seven",
+      "display": {
+        "en": "Seven of Cups",
+        "ru": "Семерка Кубки"
+      },
+      "file": "cups_seven.png"
+    },
+    {
+      "key": "cups_eight",
+      "display": {
+        "en": "Eight of Cups",
+        "ru": "Восьмерка Кубки"
+      },
+      "file": "cups_eight.png"
+    },
+    {
+      "key": "cups_nine",
+      "display": {
+        "en": "Nine of Cups",
+        "ru": "Девятка Кубки"
+      },
+      "file": "cups_nine.png"
+    },
+    {
+      "key": "cups_ten",
+      "display": {
+        "en": "Ten of Cups",
+        "ru": "Десятка Кубки"
+      },
+      "file": "cups_ten.png"
+    },
+    {
+      "key": "cups_page",
+      "display": {
+        "en": "Page of Cups",
+        "ru": "Паж Кубки"
+      },
+      "file": "cups_page.png"
+    },
+    {
+      "key": "cups_knight",
+      "display": {
+        "en": "Knight of Cups",
+        "ru": "Рыцарь Кубки"
+      },
+      "file": "cups_knight.png"
+    },
+    {
+      "key": "cups_queen",
+      "display": {
+        "en": "Queen of Cups",
+        "ru": "Королева Кубки"
+      },
+      "file": "cups_queen.png"
+    },
+    {
+      "key": "cups_king",
+      "display": {
+        "en": "King of Cups",
+        "ru": "Король Кубки"
+      },
+      "file": "cups_king.png"
+    },
+    {
+      "key": "swords_ace",
+      "display": {
+        "en": "Ace of Swords",
+        "ru": "Туз Мечи"
+      },
+      "file": "swords_ace.png"
+    },
+    {
+      "key": "swords_two",
+      "display": {
+        "en": "Two of Swords",
+        "ru": "Двойка Мечи"
+      },
+      "file": "swords_two.png"
+    },
+    {
+      "key": "swords_three",
+      "display": {
+        "en": "Three of Swords",
+        "ru": "Тройка Мечи"
+      },
+      "file": "swords_three.png"
+    },
+    {
+      "key": "swords_four",
+      "display": {
+        "en": "Four of Swords",
+        "ru": "Четверка Мечи"
+      },
+      "file": "swords_four.png"
+    },
+    {
+      "key": "swords_five",
+      "display": {
+        "en": "Five of Swords",
+        "ru": "Пятерка Мечи"
+      },
+      "file": "swords_five.png"
+    },
+    {
+      "key": "swords_six",
+      "display": {
+        "en": "Six of Swords",
+        "ru": "Шестерка Мечи"
+      },
+      "file": "swords_six.png"
+    },
+    {
+      "key": "swords_seven",
+      "display": {
+        "en": "Seven of Swords",
+        "ru": "Семерка Мечи"
+      },
+      "file": "swords_seven.png"
+    },
+    {
+      "key": "swords_eight",
+      "display": {
+        "en": "Eight of Swords",
+        "ru": "Восьмерка Мечи"
+      },
+      "file": "swords_eight.png"
+    },
+    {
+      "key": "swords_nine",
+      "display": {
+        "en": "Nine of Swords",
+        "ru": "Девятка Мечи"
+      },
+      "file": "swords_nine.png"
+    },
+    {
+      "key": "swords_ten",
+      "display": {
+        "en": "Ten of Swords",
+        "ru": "Десятка Мечи"
+      },
+      "file": "swords_ten.png"
+    },
+    {
+      "key": "swords_page",
+      "display": {
+        "en": "Page of Swords",
+        "ru": "Паж Мечи"
+      },
+      "file": "swords_page.png"
+    },
+    {
+      "key": "swords_knight",
+      "display": {
+        "en": "Knight of Swords",
+        "ru": "Рыцарь Мечи"
+      },
+      "file": "swords_knight.png"
+    },
+    {
+      "key": "swords_queen",
+      "display": {
+        "en": "Queen of Swords",
+        "ru": "Королева Мечи"
+      },
+      "file": "swords_queen.png"
+    },
+    {
+      "key": "swords_king",
+      "display": {
+        "en": "King of Swords",
+        "ru": "Король Мечи"
+      },
+      "file": "swords_king.png"
+    },
+    {
+      "key": "pentacles_ace",
+      "display": {
+        "en": "Ace of Pentacles",
+        "ru": "Туз Пентакли"
+      },
+      "file": "pentacles_ace.png"
+    },
+    {
+      "key": "pentacles_two",
+      "display": {
+        "en": "Two of Pentacles",
+        "ru": "Двойка Пентакли"
+      },
+      "file": "pentacles_two.png"
+    },
+    {
+      "key": "pentacles_three",
+      "display": {
+        "en": "Three of Pentacles",
+        "ru": "Тройка Пентакли"
+      },
+      "file": "pentacles_three.png"
+    },
+    {
+      "key": "pentacles_four",
+      "display": {
+        "en": "Four of Pentacles",
+        "ru": "Четверка Пентакли"
+      },
+      "file": "pentacles_four.png"
+    },
+    {
+      "key": "pentacles_five",
+      "display": {
+        "en": "Five of Pentacles",
+        "ru": "Пятерка Пентакли"
+      },
+      "file": "pentacles_five.png"
+    },
+    {
+      "key": "pentacles_six",
+      "display": {
+        "en": "Six of Pentacles",
+        "ru": "Шестерка Пентакли"
+      },
+      "file": "pentacles_six.png"
+    },
+    {
+      "key": "pentacles_seven",
+      "display": {
+        "en": "Seven of Pentacles",
+        "ru": "Семерка Пентакли"
+      },
+      "file": "pentacles_seven.png"
+    },
+    {
+      "key": "pentacles_eight",
+      "display": {
+        "en": "Eight of Pentacles",
+        "ru": "Восьмерка Пентакли"
+      },
+      "file": "pentacles_eight.png"
+    },
+    {
+      "key": "pentacles_nine",
+      "display": {
+        "en": "Nine of Pentacles",
+        "ru": "Девятка Пентакли"
+      },
+      "file": "pentacles_nine.png"
+    },
+    {
+      "key": "pentacles_ten",
+      "display": {
+        "en": "Ten of Pentacles",
+        "ru": "Десятка Пентакли"
+      },
+      "file": "pentacles_ten.png"
+    },
+    {
+      "key": "pentacles_page",
+      "display": {
+        "en": "Page of Pentacles",
+        "ru": "Паж Пентакли"
+      },
+      "file": "pentacles_page.png"
+    },
+    {
+      "key": "pentacles_knight",
+      "display": {
+        "en": "Knight of Pentacles",
+        "ru": "Рыцарь Пентакли"
+      },
+      "file": "pentacles_knight.png"
+    },
+    {
+      "key": "pentacles_queen",
+      "display": {
+        "en": "Queen of Pentacles",
+        "ru": "Королева Пентакли"
+      },
+      "file": "pentacles_queen.png"
+    },
+    {
+      "key": "pentacles_king",
+      "display": {
+        "en": "King of Pentacles",
+        "ru": "Король Пентакли"
+      },
+      "file": "pentacles_king.png"
+    }
+  ]
+}

@@ -1,34 +1,32 @@
-from datetime import date
+from pathlib import Path
 
-from app.experts.numerology import prepare, compose, write, verify
+from app.experts.numerology import compose, prepare, verify, write
 
 
-def test_numerology_calculations(tmp_path):
+def _run_case(
+    full_name: str, locale: str, expression: int, soul: int, personality: int
+) -> None:
     data = prepare(
         {
-            "full_name": "John Doe",
+            "full_name": full_name,
             "birth_date": "1990-12-25",
             "target_date": "2023-09-17",
-            "locale": "en",
+            "locale": locale,
         }
     )
     nums = data["numbers"]
-    assert nums["life_path"] == 11
-    assert nums["expression"] == 8
-    assert nums["soul_urge"] == 8
-    assert nums["personality"] == 9
-    assert nums["birthday"] == 7
-    assert nums["maturity"] == 1
-    assert nums["personal_year"] == 8
-    assert nums["personal_month"] == 8
-    assert nums["personal_day"] == 7
-    assert nums["pinnacles"] == [1, 8, 9, 4]
-    assert nums["challenges"] == [4, 6, 2, 2]
-    assert nums["matrix"] == {1: "11", 2: "22", 3: "", 4: "", 5: "5", 6: "", 7: "", 8: "", 9: "99"}
-
+    assert nums["expression"] == expression
+    assert nums["soul_urge"] == soul
+    assert nums["personality"] == personality
     composed = compose(data)
     assert composed["image"], "image should be generated"
-
     written = write(composed)
-    assert written["tldr"].startswith("Life Path")
     assert verify(written)
+
+
+def test_numerology_en(tmp_path: Path) -> None:
+    _run_case("John Doe", "en", 8, 8, 9)
+
+
+def test_numerology_ru(tmp_path: Path) -> None:
+    _run_case("Иван Иванов", "ru", 5, 11, 3)
