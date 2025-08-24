@@ -11,3 +11,4 @@ Babel
 Pillow
 pyswisseph
 matplotlib
+weasyprint
