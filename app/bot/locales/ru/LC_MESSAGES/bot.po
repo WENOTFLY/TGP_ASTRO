@@ -57,6 +57,9 @@ msgstr "История запросов:"
 msgid "Available tariff plans:"
 msgstr "Доступные тарифы:"
 
+msgid "{title}: {amount} XTR"
+msgstr "{title}: {amount} XTR"
+
 msgid "⬅️ Back"
 msgstr "⬅️ Назад"
 

@@ -57,6 +57,9 @@ msgstr "Usage history:"
 msgid "Available tariff plans:"
 msgstr "Available tariff plans:"
 
+msgid "{title}: {amount} XTR"
+msgstr "{title}: {amount} XTR"
+
 msgid "⬅️ Back"
 msgstr "⬅️ Back"
 
