@@ -30,7 +30,7 @@ def _calc_caption_height(cards: Sequence[CardSpec], font: ImageFont.ImageFont) -
     height = 0
     for card in cards:
         if card.caption:
-            bbox = font.getbbox(card.caption)  # type: ignore[no-untyped-call]
+            bbox = font.getbbox(card.caption)
             height = max(height, bbox[3] - bbox[1])
     return height
 
@@ -133,7 +133,7 @@ def compose(
         if frame_img:
             base.paste(frame_img, (x, y), frame_img)
         if card.caption:
-            bbox = font.getbbox(card.caption)  # type: ignore[no-untyped-call]
+            bbox = font.getbbox(card.caption)
             tw = bbox[2] - bbox[0]
             tx = x + (card_w - tw) / 2
             ty = y + card_h + 5
