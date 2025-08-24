@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime
+from typing import cast
 
 from aiogram import Bot, F, Router
 from aiogram.filters import Command
@@ -8,14 +9,13 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import CallbackQuery, Message
 from aiogram.utils.i18n import gettext as _
-from typing import cast
 
 from app.core.payments import PRODUCT_CATALOG, create_order, send_product_invoice
 from app.core.telemetry import TelemetryEvent, track
 from app.db.models import Entitlement, Usage
 from app.db.session import SessionLocal
 
-from .menu import main_menu, tariffs_menu
+from .menu import back_menu, main_menu, tariffs_menu
 
 router = Router()
 
@@ -80,7 +80,7 @@ async def _send_history(message: Message, user_id: int) -> None:
         history_text = _("No usage yet.")
     text = _("Your remaining quota: {quota}").format(quota=quota)
     text += "\n" + _("Usage history:") + "\n" + history_text
-    await message.answer(text)
+    await message.answer(text, reply_markup=back_menu())
 
 
 @router.message(MainState.menu, Command("profile"))

@@ -36,9 +36,15 @@ def tariffs_menu() -> InlineKeyboardMarkup:
 
     builder = InlineKeyboardBuilder()
     for product in PRODUCT_CATALOG.values():
-        builder.button(
-            text=_(product.title), callback_data=f"buy:{product.product_id}"
-        )
+        builder.button(text=_(product.title), callback_data=f"buy:{product.product_id}")
     builder.button(text=_("⬅️ Back"), callback_data="back:main")
     builder.adjust(1)
+    return builder.as_markup()
+
+
+def back_menu() -> InlineKeyboardMarkup:
+    """Inline keyboard with only a back button to main menu."""
+
+    builder = InlineKeyboardBuilder()
+    builder.button(text=_("⬅️ Back"), callback_data="back:main")
     return builder.as_markup()
