@@ -137,3 +137,24 @@ async def handle_successful_payment(message: types.Message, session: Session) ->
     )
     session.add(entitlement)
     session.commit()
+
+
+def refund_order(session: Session, order_id: int) -> None:
+    """Refund an order and deactivate related entitlements."""
+
+    order = session.get(Order, order_id)
+    if order is None:
+        raise PaymentError("order not found")
+    order.status = "refunded"
+    entitlements = (
+        session.query(Entitlement)
+        .filter(
+            Entitlement.user_id == order.user_id,
+            Entitlement.product == order.product,
+            Entitlement.status == "active",
+        )
+        .all()
+    )
+    for ent in entitlements:
+        ent.status = "cancelled"
+    session.commit()
