@@ -1,11 +1,10 @@
 from pathlib import Path
+from typing import Any
 
 from app.experts.numerology import compose, prepare, verify, write
 
 
-def _run_case(
-    full_name: str, locale: str, expression: int, soul: int, personality: int
-) -> None:
+def _run_case(full_name: str, locale: str, expected: dict[str, Any]) -> None:
     data = prepare(
         {
             "full_name": full_name,
@@ -15,9 +14,8 @@ def _run_case(
         }
     )
     nums = data["numbers"]
-    assert nums["expression"] == expression
-    assert nums["soul_urge"] == soul
-    assert nums["personality"] == personality
+    for key, value in expected.items():
+        assert nums[key] == value
     composed = compose(data)
     assert composed["image"], "image should be generated"
     written = write(composed)
@@ -25,8 +23,46 @@ def _run_case(
 
 
 def test_numerology_en(tmp_path: Path) -> None:
-    _run_case("John Doe", "en", 8, 8, 9)
+    _run_case(
+        "John Doe",
+        "en",
+        {
+            "life_path": 11,
+            "expression": 8,
+            "soul_urge": 8,
+            "personality": 9,
+            "birthday": 7,
+            "maturity": 1,
+            "growth_number": 2,
+            "essence": 3,
+            "transit_letters": "H D",
+            "personal_year": 8,
+            "personal_month": 8,
+            "personal_day": 7,
+            "pinnacles": [1, 8, 9, 4],
+            "challenges": [4, 6, 2, 2],
+        },
+    )
 
 
 def test_numerology_ru(tmp_path: Path) -> None:
-    _run_case("Иван Иванов", "ru", 5, 11, 3)
+    _run_case(
+        "Иван Иванов",
+        "ru",
+        {
+            "life_path": 11,
+            "expression": 5,
+            "soul_urge": 11,
+            "personality": 3,
+            "birthday": 7,
+            "maturity": 7,
+            "growth_number": 11,
+            "essence": 4,
+            "transit_letters": "Н О",
+            "personal_year": 8,
+            "personal_month": 8,
+            "personal_day": 7,
+            "pinnacles": [1, 8, 9, 4],
+            "challenges": [4, 6, 2, 2],
+        },
+    )
