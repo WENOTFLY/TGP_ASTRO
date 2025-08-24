@@ -13,7 +13,7 @@ repos:
     hooks:
       - id: mypy
         args: ["--strict"]
-        additional_dependencies: ["fastapi", "pydantic", "SQLAlchemy", "alembic"]
+        additional_dependencies: ["fastapi", "pydantic", "pydantic-settings", "SQLAlchemy", "alembic"]
   - repo: local
     hooks:
       - id: pytest
