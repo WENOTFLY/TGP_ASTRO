@@ -15,6 +15,10 @@ strict = true
 module = ["aiogram", "aiogram.*", "pytest"]
 ignore_missing_imports = true
 
+[[tool.mypy.overrides]]
+module = ["PIL", "PIL.*", "sqlalchemy", "sqlalchemy.*"]
+ignore_missing_imports = true
+
 [tool.pytest.ini_options]
 addopts = "--cov=app --cov-report=term-missing --cov-fail-under=90"
 testpaths = ["app/tests"]
