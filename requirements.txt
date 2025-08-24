@@ -5,3 +5,5 @@ celery
 redis
 psycopg[binary]
 minio
+SQLAlchemy>=2.0
+alembic
