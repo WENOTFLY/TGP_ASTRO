@@ -1,0 +1,113 @@
+{
+  "type": "astrology",
+  "set_id": "zodiac",
+  "name": {
+    "en": "Zodiac Signs",
+    "ru": "Знаки Зодиака"
+  },
+  "image": {
+    "width": 60,
+    "height": 100,
+    "aspect_ratio": "3:5",
+    "default_back": "back.png"
+  },
+  "license": "CC0-1.0",
+  "signs": [
+    {
+      "key": "aries",
+      "display": {
+        "en": "Aries",
+        "ru": "Овен"
+      },
+      "file": "aries.png"
+    },
+    {
+      "key": "taurus",
+      "display": {
+        "en": "Taurus",
+        "ru": "Телец"
+      },
+      "file": "taurus.png"
+    },
+    {
+      "key": "gemini",
+      "display": {
+        "en": "Gemini",
+        "ru": "Близнецы"
+      },
+      "file": "gemini.png"
+    },
+    {
+      "key": "cancer",
+      "display": {
+        "en": "Cancer",
+        "ru": "Рак"
+      },
+      "file": "cancer.png"
+    },
+    {
+      "key": "leo",
+      "display": {
+        "en": "Leo",
+        "ru": "Лев"
+      },
+      "file": "leo.png"
+    },
+    {
+      "key": "virgo",
+      "display": {
+        "en": "Virgo",
+        "ru": "Дева"
+      },
+      "file": "virgo.png"
+    },
+    {
+      "key": "libra",
+      "display": {
+        "en": "Libra",
+        "ru": "Весы"
+      },
+      "file": "libra.png"
+    },
+    {
+      "key": "scorpio",
+      "display": {
+        "en": "Scorpio",
+        "ru": "Скорпион"
+      },
+      "file": "scorpio.png"
+    },
+    {
+      "key": "sagittarius",
+      "display": {
+        "en": "Sagittarius",
+        "ru": "Стрелец"
+      },
+      "file": "sagittarius.png"
+    },
+    {
+      "key": "capricorn",
+      "display": {
+        "en": "Capricorn",
+        "ru": "Козерог"
+      },
+      "file": "capricorn.png"
+    },
+    {
+      "key": "aquarius",
+      "display": {
+        "en": "Aquarius",
+        "ru": "Водолей"
+      },
+      "file": "aquarius.png"
+    },
+    {
+      "key": "pisces",
+      "display": {
+        "en": "Pisces",
+        "ru": "Рыбы"
+      },
+      "file": "pisces.png"
+    }
+  ]
+}

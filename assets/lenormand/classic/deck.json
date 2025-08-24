@@ -1,0 +1,305 @@
+{
+  "type": "lenormand",
+  "deck_id": "lenormand_classic",
+  "name": {
+    "en": "Classic Lenormand",
+    "ru": "Классическая Ленорман"
+  },
+  "image": {
+    "width": 60,
+    "height": 100,
+    "aspect_ratio": "3:5",
+    "default_back": "back.png"
+  },
+  "license": "CC0-1.0",
+  "cards": [
+    {
+      "key": "rider",
+      "display": {
+        "en": "Rider",
+        "ru": "Всадник"
+      },
+      "file": "01_rider.png"
+    },
+    {
+      "key": "clover",
+      "display": {
+        "en": "Clover",
+        "ru": "Клевер"
+      },
+      "file": "02_clover.png"
+    },
+    {
+      "key": "ship",
+      "display": {
+        "en": "Ship",
+        "ru": "Корабль"
+      },
+      "file": "03_ship.png"
+    },
+    {
+      "key": "house",
+      "display": {
+        "en": "House",
+        "ru": "Дом"
+      },
+      "file": "04_house.png"
+    },
+    {
+      "key": "tree",
+      "display": {
+        "en": "Tree",
+        "ru": "Дерево"
+      },
+      "file": "05_tree.png"
+    },
+    {
+      "key": "clouds",
+      "display": {
+        "en": "Clouds",
+        "ru": "Тучи"
+      },
+      "file": "06_clouds.png"
+    },
+    {
+      "key": "snake",
+      "display": {
+        "en": "Snake",
+        "ru": "Змея"
+      },
+      "file": "07_snake.png"
+    },
+    {
+      "key": "coffin",
+      "display": {
+        "en": "Coffin",
+        "ru": "Гроб"
+      },
+      "file": "08_coffin.png"
+    },
+    {
+      "key": "bouquet",
+      "display": {
+        "en": "Bouquet",
+        "ru": "Букет"
+      },
+      "file": "09_bouquet.png"
+    },
+    {
+      "key": "scythe",
+      "display": {
+        "en": "Scythe",
+        "ru": "Коса"
+      },
+      "file": "10_scythe.png"
+    },
+    {
+      "key": "whip",
+      "display": {
+        "en": "Whip",
+        "ru": "Плеть"
+      },
+      "file": "11_whip.png"
+    },
+    {
+      "key": "birds",
+      "display": {
+        "en": "Birds",
+        "ru": "Птицы"
+      },
+      "file": "12_birds.png"
+    },
+    {
+      "key": "child",
+      "display": {
+        "en": "Child",
+        "ru": "Ребенок"
+      },
+      "file": "13_child.png"
+    },
+    {
+      "key": "fox",
+      "display": {
+        "en": "Fox",
+        "ru": "Лиса"
+      },
+      "file": "14_fox.png"
+    },
+    {
+      "key": "bear",
+      "display": {
+        "en": "Bear",
+        "ru": "Медведь"
+      },
+      "file": "15_bear.png"
+    },
+    {
+      "key": "stars",
+      "display": {
+        "en": "Stars",
+        "ru": "Звезды"
+      },
+      "file": "16_stars.png"
+    },
+    {
+      "key": "stork",
+      "display": {
+        "en": "Stork",
+        "ru": "Аист"
+      },
+      "file": "17_stork.png"
+    },
+    {
+      "key": "dog",
+      "display": {
+        "en": "Dog",
+        "ru": "Собака"
+      },
+      "file": "18_dog.png"
+    },
+    {
+      "key": "tower",
+      "display": {
+        "en": "Tower",
+        "ru": "Башня"
+      },
+      "file": "19_tower.png"
+    },
+    {
+      "key": "garden",
+      "display": {
+        "en": "Garden",
+        "ru": "Сад"
+      },
+      "file": "20_garden.png"
+    },
+    {
+      "key": "mountain",
+      "display": {
+        "en": "Mountain",
+        "ru": "Гора"
+      },
+      "file": "21_mountain.png"
+    },
+    {
+      "key": "crossroads",
+      "display": {
+        "en": "Crossroads",
+        "ru": "Развилка"
+      },
+      "file": "22_crossroads.png"
+    },
+    {
+      "key": "mice",
+      "display": {
+        "en": "Mice",
+        "ru": "Мыши"
+      },
+      "file": "23_mice.png"
+    },
+    {
+      "key": "heart",
+      "display": {
+        "en": "Heart",
+        "ru": "Сердце"
+      },
+      "file": "24_heart.png"
+    },
+    {
+      "key": "ring",
+      "display": {
+        "en": "Ring",
+        "ru": "Кольцо"
+      },
+      "file": "25_ring.png"
+    },
+    {
+      "key": "book",
+      "display": {
+        "en": "Book",
+        "ru": "Книга"
+      },
+      "file": "26_book.png"
+    },
+    {
+      "key": "letter",
+      "display": {
+        "en": "Letter",
+        "ru": "Письмо"
+      },
+      "file": "27_letter.png"
+    },
+    {
+      "key": "man",
+      "display": {
+        "en": "Man",
+        "ru": "Мужчина"
+      },
+      "file": "28_man.png"
+    },
+    {
+      "key": "woman",
+      "display": {
+        "en": "Woman",
+        "ru": "Женщина"
+      },
+      "file": "29_woman.png"
+    },
+    {
+      "key": "lily",
+      "display": {
+        "en": "Lily",
+        "ru": "Лилия"
+      },
+      "file": "30_lily.png"
+    },
+    {
+      "key": "sun",
+      "display": {
+        "en": "Sun",
+        "ru": "Солнце"
+      },
+      "file": "31_sun.png"
+    },
+    {
+      "key": "moon",
+      "display": {
+        "en": "Moon",
+        "ru": "Луна"
+      },
+      "file": "32_moon.png"
+    },
+    {
+      "key": "key",
+      "display": {
+        "en": "Key",
+        "ru": "Ключ"
+      },
+      "file": "33_key.png"
+    },
+    {
+      "key": "fish",
+      "display": {
+        "en": "Fish",
+        "ru": "Рыбы"
+      },
+      "file": "34_fish.png"
+    },
+    {
+      "key": "anchor",
+      "display": {
+        "en": "Anchor",
+        "ru": "Якорь"
+      },
+      "file": "35_anchor.png"
+    },
+    {
+      "key": "cross",
+      "display": {
+        "en": "Cross",
+        "ru": "Крест"
+      },
+      "file": "36_cross.png"
+    }
+  ]
+}
