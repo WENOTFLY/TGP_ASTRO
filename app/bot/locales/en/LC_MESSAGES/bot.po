@@ -44,3 +44,30 @@ msgstr "💎 Premium/Payment"
 
 msgid "👤 Profile/History"
 msgstr "👤 Profile/History"
+
+msgid "No usage yet."
+msgstr "No usage yet."
+
+msgid "Your remaining quota: {quota}"
+msgstr "Your remaining quota: {quota}"
+
+msgid "Usage history:"
+msgstr "Usage history:"
+
+msgid "Available tariff plans:"
+msgstr "Available tariff plans:"
+
+msgid "⬅️ Back"
+msgstr "⬅️ Back"
+
+msgid "3 Requests"
+msgstr "3 Requests"
+
+msgid "10 Requests"
+msgstr "10 Requests"
+
+msgid "Unlimited 30d"
+msgstr "Unlimited 30d"
+
+msgid "Subscription 30d"
+msgstr "Subscription 30d"

@@ -44,3 +44,30 @@ msgstr "💎 Премиум/Оплата"
 
 msgid "👤 Profile/History"
 msgstr "👤 Профиль/История"
+
+msgid "No usage yet."
+msgstr "История пуста."
+
+msgid "Your remaining quota: {quota}"
+msgstr "Ваш остаток квоты: {quota}"
+
+msgid "Usage history:"
+msgstr "История запросов:"
+
+msgid "Available tariff plans:"
+msgstr "Доступные тарифы:"
+
+msgid "⬅️ Back"
+msgstr "⬅️ Назад"
+
+msgid "3 Requests"
+msgstr "3 запроса"
+
+msgid "10 Requests"
+msgstr "10 запросов"
+
+msgid "Unlimited 30d"
+msgstr "Безлимит на 30 дней"
+
+msgid "Subscription 30d"
+msgstr "Подписка 30 дней"
