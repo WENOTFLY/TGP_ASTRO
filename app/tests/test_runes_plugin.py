@@ -26,14 +26,14 @@ def _setup_session() -> Session:
 
 def test_runes_pipeline(tmp_path: Path) -> None:
     ASSET_CACHE.clear()
-    set_dir = tmp_path / "runes" / "sample"
+    set_dir = tmp_path / "runes" / "testdeck"
     runes_dir = set_dir / "runes"
     runes_dir.mkdir(parents=True)
     _create_image(set_dir / "back.png")
     for i in range(5):
         _create_image(runes_dir / f"{i}.png")
     manifest = {
-        "set_id": "sample",
+        "set_id": "testdeck",
         "name": {"en": "Sample", "ru": "Пример"},
         "type": "runes",
         "image": {
@@ -56,7 +56,7 @@ def test_runes_pipeline(tmp_path: Path) -> None:
     load_assets(tmp_path, session)
 
     params = {
-        "set_id": "sample",
+        "set_id": "testdeck",
         "spread_id": "runes_five_cross",
         "user_id": 42,
         "draw_date": date(2024, 1, 1),
@@ -68,7 +68,7 @@ def test_runes_pipeline(tmp_path: Path) -> None:
     prep2 = runes.prepare(params)
     assert prep1["runes"] == prep2["runes"]
 
-    conf = ASSET_CACHE["sample"]["config"]
+    conf = ASSET_CACHE["testdeck"]["config"]
     by_key = {r["key"]: r for r in conf["runes"]}
     assert any(r["reversed"] for r in prep1["runes"])
     for r in prep1["runes"]:
