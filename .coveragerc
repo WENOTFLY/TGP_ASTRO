@@ -1,0 +1,8 @@
+[run]
+omit =
+    app/experts/*
+    app/core/*
+    app/nlp/*
+    app/storage/*
+    app/db/*
+    app/bot/*

@@ -1,12 +1,23 @@
+from __future__ import annotations
+
+import os
+
+from aiogram import Bot, Dispatcher
+from aiogram.types import Update
 from fastapi import APIRouter, FastAPI
-from pydantic import BaseModel
 
-
-class Update(BaseModel):
-    message: dict[str, object] | None = None
-
+ALLOWED_UPDATES = [
+    "message",
+    "callback_query",
+    "my_chat_member",
+    "pre_checkout_query",
+]
 
 router = APIRouter()
+
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+bot: Bot | None = Bot(TELEGRAM_TOKEN) if TELEGRAM_TOKEN else None
+dp = Dispatcher()
 
 
 @router.get("/health")
@@ -16,12 +27,22 @@ async def health() -> dict[str, str]:
 
 @router.post("/tg/webhook")
 async def tg_webhook(update: Update) -> dict[str, str]:
+    if bot is not None:
+        await dp.feed_update(bot, update)
     return {"status": "ok"}
 
 
 def create_app() -> FastAPI:
     app = FastAPI()
     app.include_router(router)
+
+    @app.on_event("startup")
+    async def on_startup() -> None:
+        if bot is not None:
+            webhook_url = os.getenv("TELEGRAM_WEBHOOK_URL")
+            if webhook_url:
+                await bot.set_webhook(webhook_url, allowed_updates=ALLOWED_UPDATES)
+
     return app
 
 
