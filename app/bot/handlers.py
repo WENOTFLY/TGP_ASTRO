@@ -9,7 +9,7 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import CallbackQuery, Message
 from aiogram.utils.i18n import gettext as _
 
-from app.core.payments import create_order, send_product_invoice
+from app.core.payments import PRODUCT_CATALOG, create_order, send_product_invoice
 from app.db.models import Entitlement, Usage
 from app.db.session import SessionLocal
 
@@ -95,9 +95,14 @@ async def cb_profile(callback: CallbackQuery) -> None:
 @router.callback_query(MainState.menu, F.data == "tariffs")
 async def cb_tariffs(callback: CallbackQuery) -> None:
     if callback.message:
-        await callback.message.answer(
-            _("Available tariff plans:"), reply_markup=tariffs_menu()
-        )
+        lines = [
+            _("{title}: {amount} XTR").format(
+                title=product.title, amount=product.amount_xtr
+            )
+            for product in PRODUCT_CATALOG.values()
+        ]
+        text = _("Available tariff plans:") + "\n" + "\n".join(lines)
+        await callback.message.answer(text, reply_markup=tariffs_menu())
     await callback.answer()
 
 
