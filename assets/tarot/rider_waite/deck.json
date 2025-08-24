@@ -19,7 +19,47 @@
         "en": "The Fool",
         "ru": "Шут"
       },
-      "file": "00_fool.png"
+      "file": "00_fool.png",
+      "upright": {
+        "en": [
+          "Folly",
+          "mania",
+          "extravagance",
+          "intoxication",
+          "delirium",
+          "frenzy",
+          "bewrayment."
+        ],
+        "ru": [
+          "Безумие",
+          "мания",
+          "экстравагантность",
+          "опьянение",
+          "делирий",
+          "безумие",
+          "bewrayment."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Negligence",
+          "absence",
+          "distribution",
+          "carelessness",
+          "apathy",
+          "nullity",
+          "vanity."
+        ],
+        "ru": [
+          "Халатность",
+          "отсутствие",
+          "распределение",
+          "небрежность",
+          "апатия",
+          "недействительность",
+          "тщеславие."
+        ]
+      }
     },
     {
       "key": "major_1_magician",
@@ -27,7 +67,55 @@
         "en": "The Magician",
         "ru": "Маг"
       },
-      "file": "01_magician.png"
+      "file": "01_magician.png",
+      "upright": {
+        "en": [
+          "Skill",
+          "diplomacy",
+          "address",
+          "subtlety",
+          "sickness",
+          "pain",
+          "loss",
+          "disaster",
+          "snares of enemies",
+          "self-confidence",
+          "will",
+          "the Querent",
+          "if male."
+        ],
+        "ru": [
+          "Умение",
+          "дипломатия",
+          "адрес",
+          "тонкость",
+          "Болезнь",
+          "боль",
+          "потеря",
+          "катастрофа",
+          "ловушки врагов",
+          "уверенность в себе",
+          "Уилл",
+          "Запрос",
+          "если мужчина."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Physician",
+          "Magus",
+          "mental disease",
+          "disgrace",
+          "disquiet."
+        ],
+        "ru": [
+          "Врач",
+          "маг",
+          "психические заболевания",
+          "позор",
+          "беспокойство."
+        ]
+      }
     },
     {
       "key": "major_2_high_priestess",
@@ -35,7 +123,53 @@
         "en": "The High Priestess",
         "ru": "Верховная Жрица"
       },
-      "file": "02_high_priestess.png"
+      "file": "02_high_priestess.png",
+      "upright": {
+        "en": [
+          "Secrets",
+          "mystery",
+          "the future as yet unrevealed",
+          "the woman who interests the Querent",
+          "if male",
+          "the Querent herself",
+          "if female",
+          "silence",
+          "tenacity",
+          "mystery",
+          "wisdom",
+          "science."
+        ],
+        "ru": [
+          "Секреты",
+          "тайна",
+          "будущее",
+          "пока еще не отрассудно",
+          "женщина",
+          "которая интересуется запросом",
+          "если мужчина",
+          "сама запрашиваем",
+          "если женщина",
+          "молчание",
+          "упорство",
+          "Тайна",
+          "мудрость",
+          "наука."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Passion",
+          "moral or physical ardour",
+          "conceit",
+          "surface knowledge."
+        ],
+        "ru": [
+          "Страсть",
+          "моральный или физический пыл",
+          "тщеславие",
+          "поверхностные знания."
+        ]
+      }
     },
     {
       "key": "major_3_empress",
@@ -43,7 +177,49 @@
         "en": "The Empress",
         "ru": "Императрица"
       },
-      "file": "03_empress.png"
+      "file": "03_empress.png",
+      "upright": {
+        "en": [
+          "Fruitfulness",
+          "action",
+          "initiative",
+          "length of days",
+          "the unknown",
+          "clandestine",
+          "also difficulty",
+          "doubt",
+          "ignorance."
+        ],
+        "ru": [
+          "Плодотворность",
+          "действие",
+          "инициатива",
+          "продолжительность дней",
+          "неизвестный",
+          "тайный",
+          "Также сложности",
+          "сомнения",
+          "невежество."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Light",
+          "truth",
+          "the unravelling of involved matters",
+          "public rejoicings",
+          "according to another reading",
+          "vacillation."
+        ],
+        "ru": [
+          "Свет",
+          "правда",
+          "распутывание вовлеченных вопросов",
+          "публичные радости",
+          "Согласно другому чтению",
+          "колебания."
+        ]
+      }
     },
     {
       "key": "major_4_emperor",
@@ -51,7 +227,49 @@
         "en": "The Emperor",
         "ru": "Император"
       },
-      "file": "04_emperor.png"
+      "file": "04_emperor.png",
+      "upright": {
+        "en": [
+          "Stability",
+          "power",
+          "protection",
+          "realization",
+          "a great person",
+          "aid",
+          "reason",
+          "conviction",
+          "also authority and will."
+        ],
+        "ru": [
+          "Стабильность",
+          "власть",
+          "защита",
+          "реализация",
+          "великий человек",
+          "помощь",
+          "разум",
+          "убеждение",
+          "также власть и воля."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Benevolence",
+          "compassion",
+          "credit",
+          "also confusion to enemies",
+          "obstruction",
+          "immaturity."
+        ],
+        "ru": [
+          "Доброжелательность",
+          "сострадание",
+          "кредит",
+          "Также путаница с врагами",
+          "обструкцией",
+          "незрелостью."
+        ]
+      }
     },
     {
       "key": "major_5_hierophant",
@@ -59,7 +277,46 @@
         "en": "The Hierophant",
         "ru": "Иерофант"
       },
-      "file": "05_hierophant.png"
+      "file": "05_hierophant.png",
+      "upright": {
+        "en": [
+          "Marriage",
+          "alliance",
+          "captivity",
+          "servitude",
+          "by another account",
+          "mercy and goodness",
+          "inspiration",
+          "the man to whom the Querent has recourse."
+        ],
+        "ru": [
+          "Брак",
+          "альянс",
+          "плен",
+          "рабство",
+          "по другим аккаунтам",
+          "милости и доброте",
+          "вдохновение",
+          "Человек",
+          "которому у запроса есть обращение."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Society",
+          "good understanding",
+          "concord",
+          "overkindness",
+          "weakness."
+        ],
+        "ru": [
+          "Общество",
+          "хорошее понимание",
+          "согласие",
+          "избыточность",
+          "слабость."
+        ]
+      }
     },
     {
       "key": "major_6_lovers",
@@ -67,7 +324,31 @@
         "en": "The Lovers",
         "ru": "Влюбленные"
       },
-      "file": "06_lovers.png"
+      "file": "06_lovers.png",
+      "upright": {
+        "en": [
+          "Attraction",
+          "love",
+          "beauty",
+          "trials overcome."
+        ],
+        "ru": [
+          "Привлечение",
+          "любовь",
+          "красота",
+          "испытания преодолевают."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Failure",
+          "foolish designs. Another account speaks of marriage frustrated and contrarieties of all kinds."
+        ],
+        "ru": [
+          "Неудача",
+          "глупые дизайны. Другой рассказ говорит о браке разочарованных и противоречивых всех видов."
+        ]
+      }
     },
     {
       "key": "major_7_chariot",
@@ -75,7 +356,41 @@
         "en": "The Chariot",
         "ru": "Колесница"
       },
-      "file": "07_chariot.png"
+      "file": "07_chariot.png",
+      "upright": {
+        "en": [
+          "Succour",
+          "providence also war",
+          "triumph",
+          "presumption",
+          "vengeance",
+          "trouble."
+        ],
+        "ru": [
+          "Сути",
+          "Провидение также война",
+          "триумф",
+          "презумпция",
+          "месть",
+          "неприятности."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Riot",
+          "quarrel",
+          "dispute",
+          "litigation",
+          "defeat."
+        ],
+        "ru": [
+          "Бунт",
+          "ссора",
+          "спор",
+          "судебное разбирательство",
+          "поражение."
+        ]
+      }
     },
     {
       "key": "major_8_strength",
@@ -83,7 +398,42 @@
         "en": "Strength",
         "ru": "Сила"
       },
-      "file": "08_strength.png"
+      "file": "08_strength.png",
+      "upright": {
+        "en": [
+          "Power",
+          "energy",
+          "action",
+          "courage",
+          "magnanimity",
+          "also complete success and honours."
+        ],
+        "ru": [
+          "Власть",
+          "энергия",
+          "действия",
+          "мужество",
+          "великодушие",
+          "Также полный успех и награды."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Despotism",
+          "abuse if power",
+          "weakness",
+          "discord",
+          "sometimes even disgrace."
+        ],
+        "ru": [
+          "Деспотизм",
+          "злоупотребление",
+          "если сила",
+          "слабость",
+          "раздор",
+          "иногда даже позор."
+        ]
+      }
     },
     {
       "key": "major_9_hermit",
@@ -91,7 +441,41 @@
         "en": "The Hermit",
         "ru": "Отшельник"
       },
-      "file": "09_hermit.png"
+      "file": "09_hermit.png",
+      "upright": {
+        "en": [
+          "Prudence",
+          "circumspection",
+          "also and especially treason",
+          "dissimulation",
+          "roguery",
+          "corruption."
+        ],
+        "ru": [
+          "Благоразумие",
+          "окружающая среда",
+          "Также и особенно измена",
+          "диссимуляция",
+          "рогари",
+          "коррупция."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Concealment",
+          "disguise",
+          "policy",
+          "fear",
+          "unreasoned caution."
+        ],
+        "ru": [
+          "Сокрытие",
+          "маскировка",
+          "политика",
+          "страх",
+          "необоснованная осторожность."
+        ]
+      }
     },
     {
       "key": "major_10_wheel_of_fortune",
@@ -99,7 +483,37 @@
         "en": "Wheel of Fortune",
         "ru": "Колесо Фортуны"
       },
-      "file": "10_wheel_of_fortune.png"
+      "file": "10_wheel_of_fortune.png",
+      "upright": {
+        "en": [
+          "Destiny",
+          "fortune",
+          "success",
+          "elevation",
+          "luck",
+          "felicity."
+        ],
+        "ru": [
+          "Судьба",
+          "удача",
+          "успех",
+          "возвышение",
+          "удача",
+          "фелитичность."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Increase",
+          "abundance",
+          "superfluity."
+        ],
+        "ru": [
+          "Увеличение",
+          "изобилие",
+          "избыточность."
+        ]
+      }
     },
     {
       "key": "major_11_justice",
@@ -107,7 +521,39 @@
         "en": "Justice",
         "ru": "Справедливость"
       },
-      "file": "11_justice.png"
+      "file": "11_justice.png",
+      "upright": {
+        "en": [
+          "Equity",
+          "rightness",
+          "probity",
+          "executive",
+          "triumph of the deserving side in law."
+        ],
+        "ru": [
+          "Справедливость",
+          "правильность",
+          "честность",
+          "исполнительный",
+          "Триумф достойной стороны в законе."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Law in all its departments",
+          "legal complications",
+          "bigotry",
+          "bias",
+          "excessive severity."
+        ],
+        "ru": [
+          "Закон во всех его отделениях",
+          "юридические осложнения",
+          "фанатизм",
+          "предвзятость",
+          "чрезмерная тяжесть."
+        ]
+      }
     },
     {
       "key": "major_12_hanged_man",
@@ -115,7 +561,41 @@
         "en": "The Hanged Man",
         "ru": "Повешенный"
       },
-      "file": "12_hanged_man.png"
+      "file": "12_hanged_man.png",
+      "upright": {
+        "en": [
+          "Wisdom",
+          "circumspection",
+          "discernment",
+          "trials",
+          "sacrifice",
+          "intuition",
+          "divination",
+          "prophecy."
+        ],
+        "ru": [
+          "Мудрость",
+          "оборудование",
+          "проницательность",
+          "испытания",
+          "жертва",
+          "интуиция",
+          "гадание",
+          "пророчество."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Selfishness",
+          "the crowd",
+          "body politic."
+        ],
+        "ru": [
+          "Эгоизм",
+          "толпа",
+          "политическое тело."
+        ]
+      }
     },
     {
       "key": "major_13_death",
@@ -123,7 +603,49 @@
         "en": "Death",
         "ru": "Смерть"
       },
-      "file": "13_death.png"
+      "file": "13_death.png",
+      "upright": {
+        "en": [
+          "End",
+          "mortality",
+          "destruction",
+          "corruption also",
+          "for a man",
+          "the loss of a benefactor for a woman",
+          "many contrarieties",
+          "for a maid",
+          "failure of marriage projects."
+        ],
+        "ru": [
+          "Конец",
+          "смертность",
+          "разрушение",
+          "коррупция также",
+          "для мужчины",
+          "потеря благотворителя для женщины",
+          "много противоположных",
+          "Для горничной",
+          "неудачи брачных проектов."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Inertia",
+          "sleep",
+          "lethargy",
+          "petrifaction",
+          "somnambulism",
+          "hope destroyed."
+        ],
+        "ru": [
+          "Инерция",
+          "сон",
+          "летаргия",
+          "дефифракция",
+          "сомнамбулизм",
+          "надежда уничтожена."
+        ]
+      }
     },
     {
       "key": "major_14_temperance",
@@ -131,7 +653,47 @@
         "en": "Temperance",
         "ru": "Умеренность"
       },
-      "file": "14_temperance.png"
+      "file": "14_temperance.png",
+      "upright": {
+        "en": [
+          "Economy",
+          "moderation",
+          "frugality",
+          "management",
+          "accommodation."
+        ],
+        "ru": [
+          "Экономика",
+          "умеренность",
+          "бережливость",
+          "управление",
+          "жилье."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Things connected with churches",
+          "religions",
+          "sects",
+          "the priesthood",
+          "sometimes even the priest who will marry the Querent",
+          "also disunion",
+          "unfortunate combinations",
+          "competing interests."
+        ],
+        "ru": [
+          "Вещи",
+          "связанные с церквями",
+          "религиями",
+          "сектами",
+          "священством",
+          "иногда даже священником",
+          "который выйдет замуж за запроса",
+          "Также распределение",
+          "несчастные комбинации",
+          "конкурирующие интересы."
+        ]
+      }
     },
     {
       "key": "major_15_devil",
@@ -139,7 +701,43 @@
         "en": "The Devil",
         "ru": "Дьявол"
       },
-      "file": "15_devil.png"
+      "file": "15_devil.png",
+      "upright": {
+        "en": [
+          "Ravage",
+          "violence",
+          "vehemence",
+          "extraordinary efforts",
+          "force",
+          "fatality",
+          "that which is predestined but is not for this reason evil."
+        ],
+        "ru": [
+          "Разрушение",
+          "насилие",
+          "устранение",
+          "необычайные усилия",
+          "сила",
+          "смертельность",
+          "То",
+          "что предопределено",
+          "но не по этой причине зло."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Evil fatality",
+          "weakness",
+          "pettiness",
+          "blindness."
+        ],
+        "ru": [
+          "Злой смертельный характер",
+          "слабость",
+          "мелкость",
+          "слепота."
+        ]
+      }
     },
     {
       "key": "major_16_tower",
@@ -147,7 +745,45 @@
         "en": "The Tower",
         "ru": "Башня"
       },
-      "file": "16_tower.png"
+      "file": "16_tower.png",
+      "upright": {
+        "en": [
+          "Misery",
+          "distress",
+          "indigence",
+          "adversity",
+          "calamity",
+          "disgrace",
+          "deception",
+          "ruin. It is a card in particular of unforeseen catastrophe."
+        ],
+        "ru": [
+          "Страдания",
+          "бедствие",
+          "нестабильность",
+          "невзгоды",
+          "бедствие",
+          "позор",
+          "обман",
+          "руина. Это карта",
+          "в частности",
+          "непредвиденную катастрофу."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "According to one account",
+          "the same in a lesser degree also oppression",
+          "imprisonment",
+          "tyranny."
+        ],
+        "ru": [
+          "Согласно одной учетной записи",
+          "то же самое в меньшей степени также угнетение",
+          "тюремное заключение",
+          "тирания."
+        ]
+      }
     },
     {
       "key": "major_17_star",
@@ -155,7 +791,35 @@
         "en": "The Star",
         "ru": "Звезда"
       },
-      "file": "17_star.png"
+      "file": "17_star.png",
+      "upright": {
+        "en": [
+          "Loss",
+          "theft",
+          "privation",
+          "abandonment",
+          "another reading says-hope and bright prospects"
+        ],
+        "ru": [
+          "Потеря",
+          "кража",
+          "лишения",
+          "оставление",
+          "еще одно чтение говорит-хоп и яркие перспективы"
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Arrogance",
+          "haughtiness",
+          "impotence."
+        ],
+        "ru": [
+          "Высокомерие",
+          "надменность",
+          "импотенция."
+        ]
+      }
     },
     {
       "key": "major_18_moon",
@@ -163,7 +827,43 @@
         "en": "The Moon",
         "ru": "Луна"
       },
-      "file": "18_moon.png"
+      "file": "18_moon.png",
+      "upright": {
+        "en": [
+          "Hidden enemies",
+          "danger",
+          "calumny",
+          "darkness",
+          "terror",
+          "deception",
+          "occult forces",
+          "error."
+        ],
+        "ru": [
+          "Скрытые враги",
+          "опасность",
+          "кольцевая",
+          "тьма",
+          "террор",
+          "обман",
+          "оккультные силы",
+          "ошибка."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Instability",
+          "inconstancy",
+          "silence",
+          "lesser degrees of deception and error."
+        ],
+        "ru": [
+          "Нестабильность",
+          "неуказа",
+          "молчание",
+          "меньшая степень обмана и ошибки."
+        ]
+      }
     },
     {
       "key": "major_19_sun",
@@ -171,7 +871,27 @@
         "en": "The Sun",
         "ru": "Солнце"
       },
-      "file": "19_sun.png"
+      "file": "19_sun.png",
+      "upright": {
+        "en": [
+          "Material happiness",
+          "fortunate marriage",
+          "contentment."
+        ],
+        "ru": [
+          "Материальное счастье",
+          "удачный брак",
+          "удовлетворение."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "The same in a lesser sense."
+        ],
+        "ru": [
+          "То же самое в меньшем смысле."
+        ]
+      }
     },
     {
       "key": "major_20_judgement",
@@ -179,7 +899,38 @@
         "en": "Judgement",
         "ru": "Суд"
       },
-      "file": "20_judgement.png"
+      "file": "20_judgement.png",
+      "upright": {
+        "en": [
+          "Change of position",
+          "renewal",
+          "outcome. Another account specifies total loss though lawsuit."
+        ],
+        "ru": [
+          "Смена должности",
+          "обновление",
+          "результат. Другая учетная запись определяет общую потерю",
+          "хотя и судебное разбирательство."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Weakness",
+          "pusillanimity",
+          "simplicity",
+          "also deliberation",
+          "decision",
+          "sentence."
+        ],
+        "ru": [
+          "Слабость",
+          "пульесаничность",
+          "простота",
+          "Также обсуждение",
+          "решение",
+          "приговор."
+        ]
+      }
     },
     {
       "key": "major_21_world",
@@ -187,7 +938,41 @@
         "en": "The World",
         "ru": "Мир"
       },
-      "file": "21_world.png"
+      "file": "21_world.png",
+      "upright": {
+        "en": [
+          "Assured success",
+          "recompense",
+          "voyage",
+          "route",
+          "emigration",
+          "flight",
+          "change of place."
+        ],
+        "ru": [
+          "Заверительный успех",
+          "вознаграждение",
+          "путешествие",
+          "маршрут",
+          "эмиграция",
+          "полет",
+          "смена места."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Inertia",
+          "fixity",
+          "stagnation",
+          "permanence."
+        ],
+        "ru": [
+          "Инерция",
+          "фиксирование",
+          "стагнация",
+          "постоянство."
+        ]
+      }
     },
     {
       "key": "wands_ace",
@@ -195,7 +980,62 @@
         "en": "Ace of Wands",
         "ru": "Туз Жезлы"
       },
-      "file": "wands_ace.png"
+      "file": "wands_ace.png",
+      "upright": {
+        "en": [
+          "Creation",
+          "invention",
+          "enterprise",
+          "the powers which result in these",
+          "principle",
+          "beginning",
+          "source",
+          "birth",
+          "family",
+          "origin",
+          "and in a sense the virility which is behind them",
+          "the starting point of enterprises",
+          "according to another account",
+          "money",
+          "fortune",
+          "inheritance."
+        ],
+        "ru": [
+          "Создание",
+          "изобретение",
+          "предприятие",
+          "полномочия",
+          "которые приводят к ним",
+          "Принцип",
+          "начало",
+          "источник",
+          "рождение",
+          "семья",
+          "происхождение и в некотором смысле мужество",
+          "которое стоит за ними",
+          "отправная точка предприятий",
+          "Согласно другому счета",
+          "деньги",
+          "удача",
+          "наследство."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Fall",
+          "decadence",
+          "ruin",
+          "perdition",
+          "to perish also a certain clouded joy."
+        ],
+        "ru": [
+          "Падение",
+          "упадок",
+          "разрушение",
+          "погиб",
+          "чтобы погибнуть также определенную затуманенную радость."
+        ]
+      }
     },
     {
       "key": "wands_two",
@@ -203,7 +1043,62 @@
         "en": "Two of Wands",
         "ru": "Двойка Жезлы"
       },
-      "file": "wands_two.png"
+      "file": "wands_two.png",
+      "upright": {
+        "en": [
+          "Between the alternative readings there is no marriage possible",
+          "on the one hand",
+          "riches",
+          "fortune",
+          "magnificence",
+          "on the other",
+          "physical suffering",
+          "disease",
+          "chagrin",
+          "sadness",
+          "mortification. The design gives one suggestion",
+          "here is a lord overlooking his dominion and alternately contemplating a globe",
+          "it looks like the malady",
+          "the mortification",
+          "the sadness of Alexander amidst the grandeur of this world's wealth."
+        ],
+        "ru": [
+          "Между альтернативными показаниями нет возможностей брака",
+          "С одной стороны",
+          "богатство",
+          "удача",
+          "великолепие",
+          "С другой стороны",
+          "физические страдания",
+          "болезнь",
+          "огорчение",
+          "грусть",
+          "огорчение. Дизайн дает одно предложение",
+          "Вот Господь",
+          "пропускающий его владычество и попеременно созерцает глобус",
+          "Это похоже на болезнь",
+          "унижение",
+          "грусть Александра среди величия богатства этого мира."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Surprise",
+          "wonder",
+          "enchantment",
+          "emotion",
+          "trouble",
+          "fear."
+        ],
+        "ru": [
+          "Сюрприз",
+          "чудо",
+          "очарование",
+          "эмоции",
+          "неприятности",
+          "страх."
+        ]
+      }
     },
     {
       "key": "wands_three",
@@ -211,7 +1106,45 @@
         "en": "Three of Wands",
         "ru": "Тройка Жезлы"
       },
-      "file": "wands_three.png"
+      "file": "wands_three.png",
+      "upright": {
+        "en": [
+          "He symbolizes established strength",
+          "enterprise",
+          "effort",
+          "trade",
+          "commerce",
+          "discovery",
+          "those are his ships",
+          "bearing his merchandise",
+          "which are sailing over the sea. The card also signifies able co-operation in business",
+          "as if the successful merchant prince were looking from his side towards yours with a view to help you."
+        ],
+        "ru": [
+          "Он символизирует устоявшуюся силу",
+          "предприятие",
+          "усилия",
+          "торговля",
+          "торговля",
+          "открытие",
+          "Это его корабли",
+          "несущие его товары",
+          "которые плавают над морем. Карта также означает способное сотрудничество в бизнесе",
+          "как будто успешный торговец принцем смотрел с его стороны в сторону вашей помощи."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "The end of troubles",
+          "suspension or cessation of adversity",
+          "toil and disappointment."
+        ],
+        "ru": [
+          "Конец проблем",
+          "подвеска или прекращение бедствий",
+          "труда и разочарования."
+        ]
+      }
     },
     {
       "key": "wands_four",
@@ -219,7 +1152,48 @@
         "en": "Four of Wands",
         "ru": "Четверка Жезлы"
       },
-      "file": "wands_four.png"
+      "file": "wands_four.png",
+      "upright": {
+        "en": [
+          "They are for once almost on the surface--country life",
+          "haven of refuge",
+          "a species of domestic harvest-home",
+          "repose",
+          "concord",
+          "harmony",
+          "prosperity",
+          "peace",
+          "and the perfected work of these."
+        ],
+        "ru": [
+          "Они почти на предмет на поверхности-жизнь",
+          "убежище убежища",
+          "вид домашнего домохозяйства",
+          "отдыха",
+          "согласованности",
+          "гармонии",
+          "процветания",
+          "мира и усовершенствованной их работы."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "The meaning remains unaltered",
+          "it is prosperity",
+          "increase",
+          "felicity",
+          "beauty",
+          "embellishment."
+        ],
+        "ru": [
+          "Значение остается неизменным",
+          "Это процветание",
+          "увеличение",
+          "фелитичность",
+          "красота",
+          "украшения."
+        ]
+      }
     },
     {
       "key": "wands_five",
@@ -227,7 +1201,43 @@
         "en": "Five of Wands",
         "ru": "Пятерка Жезлы"
       },
-      "file": "wands_five.png"
+      "file": "wands_five.png",
+      "upright": {
+        "en": [
+          "Imitation",
+          "as",
+          "for example",
+          "sham fight",
+          "but also the strenuous competition and struggle of the search after riches and fortune. In this sense it connects with the battle of life. Hence some attributions say that it is a card of gold",
+          "gain",
+          "opulence."
+        ],
+        "ru": [
+          "Имитация",
+          "как",
+          "например",
+          "фиктивная борьба",
+          "а также напряженная конкуренция и борьба поиска после богатства и удачи. В этом смысле это соединяется с битвой жизни. Следовательно",
+          "некоторые атрибуты говорят",
+          "что это карта золота",
+          "выгоды",
+          "богатства."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Litigation",
+          "disputes",
+          "trickery",
+          "contradiction."
+        ],
+        "ru": [
+          "Судебный процесс",
+          "споры",
+          "обман",
+          "противоречие."
+        ]
+      }
     },
     {
       "key": "wands_six",
@@ -235,7 +1245,51 @@
         "en": "Six of Wands",
         "ru": "Шестерка Жезлы"
       },
-      "file": "wands_six.png"
+      "file": "wands_six.png",
+      "upright": {
+        "en": [
+          "The card has been so designed that it can cover several significations",
+          "on the surface",
+          "it is a victor triumphing",
+          "but it is also great news",
+          "such as might be carried in state by the King's courier",
+          "it is expectation crowned with its own desire",
+          "the crown of hope",
+          "and so forth."
+        ],
+        "ru": [
+          "Карта была настолько разработана",
+          "что может охватить несколько значений",
+          "На первый взгляд",
+          "это победитель победителя",
+          "но это также отличная новость",
+          "которая может быть перенесена в государство курьером короля",
+          "Это ожидание",
+          "увенчанное его собственным желанием",
+          "короной надежды и так далее."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Apprehension",
+          "fear",
+          "as of a victorious enemy at the gate",
+          "treachery",
+          "disloyalty",
+          "as of gates being opened to the enemy",
+          "also indefinite delay."
+        ],
+        "ru": [
+          "Задержание",
+          "страх",
+          "как победившего врага у ворот",
+          "предательство",
+          "нелояльность",
+          "как и ворота",
+          "открывающиеся для врага",
+          "также неопределенная задержка."
+        ]
+      }
     },
     {
       "key": "wands_seven",
@@ -243,7 +1297,53 @@
         "en": "Seven of Wands",
         "ru": "Семерка Жезлы"
       },
-      "file": "wands_seven.png"
+      "file": "wands_seven.png",
+      "upright": {
+        "en": [
+          "It is a card of valour",
+          "for",
+          "on the surface",
+          "six are attacking one",
+          "who has",
+          "however",
+          "the vantage position. On the intellectual plane",
+          "it signifies discussion",
+          "wordy strife",
+          "in business--negotiations",
+          "war of trade",
+          "barter",
+          "competition. It is further a card of success",
+          "for the combatant is on the top and his enemies may be unable to reach him."
+        ],
+        "ru": [
+          "Это карта доблести",
+          "поскольку",
+          "на первый взгляд",
+          "шесть атакуют одну",
+          "которая",
+          "однако",
+          "имеет преимущество. На интеллектуальной плоскости это означает обсуждение",
+          "многословные раздоры",
+          "В бизнесе-отклонении",
+          "война в торговле",
+          "бартер",
+          "конкуренция. Это далее карта успеха",
+          "потому что бойца находится на вершине",
+          "и его враги могут быть не в состоянии связаться с ним."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Perplexity",
+          "embarrassments",
+          "anxiety. It is also a caution against indecision."
+        ],
+        "ru": [
+          "Смущение",
+          "смущение",
+          "беспокойство. Это также предостережение против нерешительности."
+        ]
+      }
     },
     {
       "key": "wands_eight",
@@ -251,7 +1351,52 @@
         "en": "Eight of Wands",
         "ru": "Восьмерка Жезлы"
       },
-      "file": "wands_eight.png"
+      "file": "wands_eight.png",
+      "upright": {
+        "en": [
+          "Activity in undertakings",
+          "the path of such activity",
+          "swiftness",
+          "as that of an express messenger",
+          "great haste",
+          "great hope",
+          "speed towards an end which promises assured felicity",
+          "generally",
+          "that which is on the move",
+          "also the arrows of love."
+        ],
+        "ru": [
+          "Активность в начинаниях",
+          "путь такой деятельности",
+          "быстрота",
+          "как у экспресс -посланника",
+          "Великая спешка",
+          "великая надежда",
+          "скорость к концу",
+          "которая обещает уверенную Фелисити",
+          "Как правило",
+          "то",
+          "что находится в движении",
+          "Также стрелы любви."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Arrows of jealousy",
+          "internal dispute",
+          "stingings of conscience",
+          "quarrels",
+          "and domestic disputes for persons who are married."
+        ],
+        "ru": [
+          "Стрелы ревности",
+          "внутреннего спора",
+          "укусов совести",
+          "ссоры",
+          "и внутренние споры для лиц",
+          "которые женаты."
+        ]
+      }
     },
     {
       "key": "wands_nine",
@@ -259,7 +1404,36 @@
         "en": "Nine of Wands",
         "ru": "Девятка Жезлы"
       },
-      "file": "wands_nine.png"
+      "file": "wands_nine.png",
+      "upright": {
+        "en": [
+          "The card signifies strength in opposition. If attacked",
+          "the person will meet an onslaught boldly",
+          "and his build shews",
+          "that he may prove a formidable antagonist. With this main significance there are all its possible adjuncts--delay",
+          "suspension",
+          "adjournment."
+        ],
+        "ru": [
+          "Карта означает силу в оппозиции. В случае атаки человек смело встретит натиск",
+          "и его сборка показывает",
+          "что он может оказаться грозным антагонистом. С этим основным значением есть все возможные дополнения-отсрочка",
+          "подвеска",
+          "отсрочка."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Obstacles",
+          "adversity",
+          "calamity."
+        ],
+        "ru": [
+          "Препятствия",
+          "невзгоды",
+          "бедствие."
+        ]
+      }
     },
     {
       "key": "wands_ten",
@@ -267,7 +1441,51 @@
         "en": "Ten of Wands",
         "ru": "Десятка Жезлы"
       },
-      "file": "wands_ten.png"
+      "file": "wands_ten.png",
+      "upright": {
+        "en": [
+          "A card of many significances",
+          "and some of the readings cannot be harmonized. I set aside that which connects it with honour and good faith. The chief meaning is oppression simply",
+          "but it is also fortune",
+          "gain",
+          "any kind of success",
+          "and then it is the oppression of these things. It is also a card of false-seeming",
+          "disguise",
+          "perfidy. The place which the figure is approaching may suffer from the rods that he carries. Success is stultified if the Nine of Swords follows",
+          "and if it is a question of a lawsuit",
+          "there will be certain loss."
+        ],
+        "ru": [
+          "Карта многих значений",
+          "и некоторые показания не могут быть гармонизированы. Я отложил то",
+          "что связывает его с честью и добросовестной. Главное значение - это угнетение просто",
+          "но это также удача",
+          "выгода",
+          "любой вид успеха",
+          "и тогда это угнетение этих вещей. Это также карта ложных видов",
+          "маскировки",
+          "перфорирования. Место",
+          "к которому приближается фигура",
+          "может страдать от стержней",
+          "которые он несет. Успех ускорен",
+          "если следовать девять мечей",
+          "и если это вопрос судебного процесса",
+          "будет определенная потеря."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Contrarieties",
+          "difficulties",
+          "intrigues",
+          "and their analogies."
+        ],
+        "ru": [
+          "Противоречия",
+          "трудности",
+          "интриги и их аналогии."
+        ]
+      }
     },
     {
       "key": "wands_page",
@@ -275,7 +1493,40 @@
         "en": "Page of Wands",
         "ru": "Паж Жезлы"
       },
-      "file": "wands_page.png"
+      "file": "wands_page.png",
+      "upright": {
+        "en": [
+          "Dark young man",
+          "faithful",
+          "a lover",
+          "an envoy",
+          "a postman. Beside a man",
+          "he will bear favourable testimony concerning him. A dangerous rival",
+          "if followed by the Page of Cups. Has the chief qualities of his suit. He may signify family intelligence."
+        ],
+        "ru": [
+          "Темный молодой человек",
+          "верный",
+          "любовник",
+          "посланник",
+          "почтальон. Помимо человека",
+          "он будет нести благоприятные показания относительно него. Опасный соперник",
+          "если последует страница чашек. Имеет главные качества его костюма. Он может означать семейный интеллект."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Anecdotes",
+          "announcements",
+          "evil news. Also indecision and the instability which accompanies it."
+        ],
+        "ru": [
+          "Анекдоты",
+          "объявления",
+          "злые новости. Также нерешительность и нестабильность",
+          "которая сопровождает ее."
+        ]
+      }
     },
     {
       "key": "wands_knight",
@@ -283,7 +1534,37 @@
         "en": "Knight of Wands",
         "ru": "Рыцарь Жезлы"
       },
-      "file": "wands_knight.png"
+      "file": "wands_knight.png",
+      "upright": {
+        "en": [
+          "Departure",
+          "absence",
+          "flight",
+          "emigration. A dark young man",
+          "friendly. Change of residence."
+        ],
+        "ru": [
+          "Отъезд",
+          "отсутствие",
+          "рейс",
+          "эмиграция. Темный молодой человек",
+          "дружелюбный. Смена резиденции."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Rupture",
+          "division",
+          "interruption",
+          "discord."
+        ],
+        "ru": [
+          "Разрыв",
+          "разделение",
+          "прерывание",
+          "раздор."
+        ]
+      }
     },
     {
       "key": "wands_queen",
@@ -291,7 +1572,53 @@
         "en": "Queen of Wands",
         "ru": "Королева Жезлы"
       },
-      "file": "wands_queen.png"
+      "file": "wands_queen.png",
+      "upright": {
+        "en": [
+          "A dark woman",
+          "countrywoman",
+          "friendly",
+          "chaste",
+          "loving",
+          "honourable. If the card beside her signifies a man",
+          "she is well disposed towards him",
+          "if a woman",
+          "she is interested in the Querent. Also",
+          "love of money",
+          "or a certain success in business."
+        ],
+        "ru": [
+          "Темная женщина",
+          "окружающая местность",
+          "дружелюбная",
+          "целомудренная",
+          "любящая",
+          "почетная. Если карта рядом с ней означает мужчину",
+          "она хорошо склонен к нему",
+          "Если женщина",
+          "она заинтересована в запросе. Кроме того",
+          "любовь к деньгам или определенный успех в бизнесе."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Good",
+          "economical",
+          "obliging",
+          "serviceable. Signifies also--but in certain positions and in the neighbourhood of other cards tending in such directions--opposition",
+          "jealousy",
+          "even deceit and infidelity."
+        ],
+        "ru": [
+          "Хороший",
+          "экономичный",
+          "обязательный",
+          "исправный. Также означает-но в определенных позициях и в окрестностях других карт",
+          "имеющих тенденцию в таких направлениях-оппозиция",
+          "ревность",
+          "даже обман и неверность."
+        ]
+      }
     },
     {
       "key": "wands_king",
@@ -299,7 +1626,40 @@
         "en": "King of Wands",
         "ru": "Король Жезлы"
       },
-      "file": "wands_king.png"
+      "file": "wands_king.png",
+      "upright": {
+        "en": [
+          "Dark man",
+          "friendly",
+          "countryman",
+          "generally married",
+          "honest and conscientious. The card always signifies honesty",
+          "and may mean news concerning an unexpected heritage to fall in before very long."
+        ],
+        "ru": [
+          "Темный Человек",
+          "дружелюбный",
+          "соотечественник",
+          "в целом женатый",
+          "честный и добросовестный. Карта всегда означает честность",
+          "и может означать новости о неожиданном наследии",
+          "которое может упасть до очень долгого."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Good",
+          "but severe",
+          "austere",
+          "yet tolerant."
+        ],
+        "ru": [
+          "Хорошо",
+          "но серьезно",
+          "Строго",
+          "но терпимо."
+        ]
+      }
     },
     {
       "key": "cups_ace",
@@ -307,7 +1667,45 @@
         "en": "Ace of Cups",
         "ru": "Туз Кубки"
       },
-      "file": "cups_ace.png"
+      "file": "cups_ace.png",
+      "upright": {
+        "en": [
+          "House of the true heart",
+          "joy",
+          "content",
+          "abode",
+          "nourishment",
+          "abundance",
+          "fertility",
+          "Holy Table",
+          "felicity hereof."
+        ],
+        "ru": [
+          "Дом истинного сердца",
+          "радость",
+          "содержание",
+          "обитель",
+          "питание",
+          "изобилие",
+          "фертильность",
+          "Святой стол",
+          "Фелисити настоящий."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "House of the false heart",
+          "mutation",
+          "instability",
+          "revolution."
+        ],
+        "ru": [
+          "Дом ложного сердца",
+          "мутации",
+          "нестабильности",
+          "революции."
+        ]
+      }
     },
     {
       "key": "cups_two",
@@ -315,7 +1713,60 @@
         "en": "Two of Cups",
         "ru": "Двойка Кубки"
       },
-      "file": "cups_two.png"
+      "file": "cups_two.png",
+      "upright": {
+        "en": [
+          "Love",
+          "passion",
+          "friendship",
+          "affinity",
+          "union",
+          "concord",
+          "sympathy",
+          "the interrelation of the sexes",
+          "and--as a suggestion apart from all offices of divination--that desire which is not in Nature",
+          "but by which Nature is sanctified."
+        ],
+        "ru": [
+          "Любовь",
+          "страсть",
+          "дружба",
+          "близость",
+          "союз",
+          "согласие",
+          "сочувствие",
+          "взаимосвязь полов и-как предложение",
+          "кроме всех офисов гадания",
+          "-это желание",
+          "которое не в природе",
+          "но при этом природа освящается."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Lust",
+          "cupidity",
+          "jealousy",
+          "wish",
+          "desire",
+          "but the card may also give",
+          "says W.",
+          "\"that desire which is not in nature",
+          "but by which nature is sanctified.\""
+        ],
+        "ru": [
+          "Похоть",
+          "хищность",
+          "ревность",
+          "желание",
+          "желание",
+          "но карта также может дать",
+          "говорит У.",
+          "«то желание",
+          "которое не в природе",
+          "но с помощью которой природа освящается»."
+        ]
+      }
     },
     {
       "key": "cups_three",
@@ -323,7 +1774,42 @@
         "en": "Three of Cups",
         "ru": "Тройка Кубки"
       },
-      "file": "cups_three.png"
+      "file": "cups_three.png",
+      "upright": {
+        "en": [
+          "The conclusion of any matter in plenty",
+          "perfection and merriment",
+          "happy issue",
+          "victory",
+          "fulfilment",
+          "solace",
+          "healing"
+        ],
+        "ru": [
+          "Заключение любого вопроса в изобилии",
+          "совершенстве и веселье",
+          "Счастливая проблема",
+          "победа",
+          "выполнение",
+          "утешение",
+          "исцеление"
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Expedition",
+          "dispatch",
+          "achievement",
+          "end. It signifies also the side of excess in physical enjoyment",
+          "and the pleasures of the senses."
+        ],
+        "ru": [
+          "Экспедиция",
+          "отправка",
+          "достижения",
+          "конец. Это также означает также сторону избытка в физическом наслаждении и удовольствиям чувств."
+        ]
+      }
     },
     {
       "key": "cups_four",
@@ -331,7 +1817,45 @@
         "en": "Four of Cups",
         "ru": "Четверка Кубки"
       },
-      "file": "cups_four.png"
+      "file": "cups_four.png",
+      "upright": {
+        "en": [
+          "Weariness",
+          "disgust",
+          "aversion",
+          "imaginary vexations",
+          "as if the wine of this world had caused satiety only",
+          "another wine",
+          "as if a fairy gift",
+          "is now offered the wastrel",
+          "but he sees no consolation therein. This is also a card of blended pleasure."
+        ],
+        "ru": [
+          "Усталость",
+          "отвращение",
+          "отвращение",
+          "воображаемые досады",
+          "как будто вино этого мира вызвало только сытость",
+          "Еще одно вино",
+          "как будто сказочный подарок",
+          "теперь предлагается Wastrel",
+          "но он не видит утешения в нем. Это также карта смешанного удовольствия."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Novelty",
+          "presage",
+          "new instruction",
+          "new relations."
+        ],
+        "ru": [
+          "Новинка",
+          "предварительное представление",
+          "новое обучение",
+          "новые отношения."
+        ]
+      }
     },
     {
       "key": "cups_five",
@@ -339,7 +1863,62 @@
         "en": "Five of Cups",
         "ru": "Пятерка Кубки"
       },
-      "file": "cups_five.png"
+      "file": "cups_five.png",
+      "upright": {
+        "en": [
+          "A dark",
+          "cloaked figure",
+          "looking sideways at three prone cups two others stand upright behind him",
+          "a bridge is in the background",
+          "leading to a small keep or holding. Divanatory Meanings: It is a card of loss",
+          "but something remains over",
+          "three have been taken",
+          "but two are left",
+          "it is a card of inheritance",
+          "patrimony",
+          "transmission",
+          "but not corresponding to expectations",
+          "with some interpreters it is a card of marriage",
+          "but not without bitterness or frustration."
+        ],
+        "ru": [
+          "Темная",
+          "скрытая фигура",
+          "смотрящая в сторону на трех склонных чашках",
+          "две другие стоят прямо позади него",
+          "Мост находится на заднем плане",
+          "что приводит к небольшому сохранению или удержанию. Развольные значения: это карта потери",
+          "но что -то остается конец",
+          "Три были взяты",
+          "но двое остались",
+          "Это карта наследования",
+          "наследства",
+          "передачи",
+          "но не соответствующей ожиданиям",
+          "С некоторыми переводчиками это карта брака",
+          "но не без горечи или разочарования."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "News",
+          "alliances",
+          "affinity",
+          "consanguinity",
+          "ancestry",
+          "return",
+          "false projects."
+        ],
+        "ru": [
+          "Новости",
+          "альянсы",
+          "сродство",
+          "кровь",
+          "происхождение",
+          "возвращение",
+          "ложные проекты."
+        ]
+      }
     },
     {
       "key": "cups_six",
@@ -347,7 +1926,49 @@
         "en": "Six of Cups",
         "ru": "Шестерка Кубки"
       },
-      "file": "cups_six.png"
+      "file": "cups_six.png",
+      "upright": {
+        "en": [
+          "A card of the past and of memories",
+          "looking back",
+          "as--for example--on childhood",
+          "happiness",
+          "enjoyment",
+          "but coming rather from the past",
+          "things that have vanished. Another reading reverses this",
+          "giving new relations",
+          "new knowledge",
+          "new environment",
+          "and then the children are disporting in an unfamiliar precinct."
+        ],
+        "ru": [
+          "Карта прошлого и воспоминаний",
+          "оглядываясь назад",
+          "как пример-в детстве",
+          "Счастье",
+          "наслаждение",
+          "но приезжая скорее из прошлого",
+          "вещи",
+          "которые исчезли. Еще одно чтение меняет это",
+          "давая новые отношения",
+          "новые знания",
+          "новую среду",
+          "а затем дети не имеют отношения к незнакомому участку."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "The future",
+          "renewal",
+          "that which will come to pass presently."
+        ],
+        "ru": [
+          "Будущее",
+          "обновление",
+          "то",
+          "что в настоящее время пройдет."
+        ]
+      }
     },
     {
       "key": "cups_seven",
@@ -355,7 +1976,42 @@
         "en": "Seven of Cups",
         "ru": "Семерка Кубки"
       },
-      "file": "cups_seven.png"
+      "file": "cups_seven.png",
+      "upright": {
+        "en": [
+          "Fairy favours",
+          "images of reflection",
+          "sentiment",
+          "imagination",
+          "things seen in the glass of contemplation",
+          "some attainment in these degrees",
+          "but nothing permanent or substantial is suggested."
+        ],
+        "ru": [
+          "Сказочные одолжения",
+          "изображения размышлений",
+          "настроений",
+          "воображения",
+          "вещей",
+          "которые можно увидеть в стакане созерцания",
+          "Некоторое достижение в этих степенях",
+          "но не предлагается ничего постоянного или существенного."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Desire",
+          "will",
+          "determination",
+          "project."
+        ],
+        "ru": [
+          "Желание",
+          "воля",
+          "решимость",
+          "проект."
+        ]
+      }
     },
     {
       "key": "cups_eight",
@@ -363,7 +2019,43 @@
         "en": "Eight of Cups",
         "ru": "Восьмерка Кубки"
       },
-      "file": "cups_eight.png"
+      "file": "cups_eight.png",
+      "upright": {
+        "en": [
+          "The card speaks for itself on the surface",
+          "but other readings are entirely antithetical--giving joy",
+          "mildness",
+          "timidity",
+          "honour",
+          "modesty. In practice",
+          "it is usually found that the card shews the decline of a matter",
+          "or that a matter which has been thought to be important is really of slight consequence--either for good or evil."
+        ],
+        "ru": [
+          "Карта говорит сама по себе на поверхности",
+          "но другие показания являются совершенно противоположными-довольными радостью",
+          "мягкостью",
+          "робостью",
+          "честью",
+          "скромностью. На практике обычно обнаруживается",
+          "что карта показывает упадок вопроса или что вопрос",
+          "который считался важным",
+          "действительно имеет небольшие последствия-либо для добра",
+          "либо для зла."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Great joy",
+          "happiness",
+          "feasting."
+        ],
+        "ru": [
+          "Великая радость",
+          "счастье",
+          "празднование."
+        ]
+      }
     },
     {
       "key": "cups_nine",
@@ -371,7 +2063,45 @@
         "en": "Nine of Cups",
         "ru": "Девятка Кубки"
       },
-      "file": "cups_nine.png"
+      "file": "cups_nine.png",
+      "upright": {
+        "en": [
+          "Concord",
+          "contentment",
+          "physical bien-être",
+          "also victory",
+          "success",
+          "advantage",
+          "satisfaction for the Querent or person for whom the consultation is made."
+        ],
+        "ru": [
+          "Согласование",
+          "удовлетворение",
+          "физический биен-брю",
+          "Также победа",
+          "успех",
+          "преимущество",
+          "Удовлетворенность запросом или лицом",
+          "для которого проводится консультация."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Truth",
+          "loyalty",
+          "liberty",
+          "but the readings vary and include mistakes",
+          "imperfections",
+          "etc."
+        ],
+        "ru": [
+          "Истина",
+          "верность",
+          "свобода",
+          "Но показания варьируются и включают ошибки",
+          "недостатки и т. Д."
+        ]
+      }
     },
     {
       "key": "cups_ten",
@@ -379,7 +2109,43 @@
         "en": "Ten of Cups",
         "ru": "Десятка Кубки"
       },
-      "file": "cups_ten.png"
+      "file": "cups_ten.png",
+      "upright": {
+        "en": [
+          "Contentment",
+          "repose of the entire heart",
+          "the perfection of that state",
+          "also perfection of human love and friendship",
+          "if with several picture-cards",
+          "a person who is taking charge of the Querent's interests",
+          "also the town",
+          "village or country inhabited by the Querent."
+        ],
+        "ru": [
+          "Удовлетворение",
+          "покоя всего сердца",
+          "совершенство этого состояния",
+          "Также совершенство человеческой любви и дружбы",
+          "Если с несколькими картами картины",
+          "человек",
+          "который берет на себя ответственность за интересы запроса",
+          "Также город",
+          "деревня или страна",
+          "населенная запросом."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Repose of the false heart",
+          "indignation",
+          "violence."
+        ],
+        "ru": [
+          "Покой ложного сердца",
+          "негодования",
+          "насилия."
+        ]
+      }
     },
     {
       "key": "cups_page",
@@ -387,7 +2153,49 @@
         "en": "Page of Cups",
         "ru": "Паж Кубки"
       },
-      "file": "cups_page.png"
+      "file": "cups_page.png",
+      "upright": {
+        "en": [
+          "Fair young man",
+          "one impelled to render service and with whom the Querent will be connected",
+          "a studious youth",
+          "news",
+          "message",
+          "application",
+          "reflection",
+          "meditation",
+          "also these things directed to business."
+        ],
+        "ru": [
+          "Справедливый молодой человек",
+          "побуждаемый к оказанию службы и с которым будет связан запрос",
+          "прилегающая молодежь",
+          "Новости",
+          "сообщение",
+          "применение",
+          "размышление",
+          "медитация",
+          "Также эти вещи направлены на бизнес."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Taste",
+          "inclination",
+          "attachment",
+          "seduction",
+          "deception",
+          "artifice."
+        ],
+        "ru": [
+          "Вкус",
+          "склонность",
+          "привязанность",
+          "соблазнение",
+          "обман",
+          "искусство."
+        ]
+      }
     },
     {
       "key": "cups_knight",
@@ -395,7 +2203,46 @@
         "en": "Knight of Cups",
         "ru": "Рыцарь Кубки"
       },
-      "file": "cups_knight.png"
+      "file": "cups_knight.png",
+      "upright": {
+        "en": [
+          "Arrival",
+          "approach--sometimes that of a messenger",
+          "advances",
+          "proposition",
+          "demeanour",
+          "invitation",
+          "incitement."
+        ],
+        "ru": [
+          "Прибытие",
+          "подход-иногда бывает",
+          "что у посланника",
+          "Достижения",
+          "предложение",
+          "поведение",
+          "приглашение",
+          "подстрекательство."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Trickery",
+          "artifice",
+          "subtlety",
+          "swindling",
+          "duplicity",
+          "fraud."
+        ],
+        "ru": [
+          "Хитрость",
+          "искусство",
+          "тонкость",
+          "мошенничество",
+          "двуличность",
+          "мошенничество."
+        ]
+      }
     },
     {
       "key": "cups_queen",
@@ -403,7 +2250,63 @@
         "en": "Queen of Cups",
         "ru": "Королева Кубки"
       },
-      "file": "cups_queen.png"
+      "file": "cups_queen.png",
+      "upright": {
+        "en": [
+          "Good",
+          "fair woman",
+          "honest",
+          "devoted woman",
+          "who will do service to the Querent",
+          "loving intelligence",
+          "and hence the gift of vision",
+          "success",
+          "happiness",
+          "pleasure",
+          "also wisdom",
+          "virtue",
+          "a perfect spouse and a good mother."
+        ],
+        "ru": [
+          "Хорошая",
+          "честная женщина",
+          "Честная",
+          "преданная женщина",
+          "которая будет служить в запросе",
+          "любящий интеллект и",
+          "следовательно",
+          "дар видения",
+          "успех",
+          "счастье",
+          "удовольствие",
+          "также мудрость",
+          "добродетель",
+          "Идеальный супруг и хорошая мать."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "The accounts vary",
+          "good woman",
+          "otherwise",
+          "distinguished woman but one not to be trusted",
+          "perverse woman",
+          "vice",
+          "dishonour",
+          "depravity."
+        ],
+        "ru": [
+          "Счета различаются",
+          "хорошая женщина",
+          "в противном случае",
+          "выдающаяся женщина",
+          "но нельзя доверять",
+          "извращенная женщина",
+          "Вице",
+          "бесчестный",
+          "развращение."
+        ]
+      }
     },
     {
       "key": "cups_king",
@@ -411,7 +2314,58 @@
         "en": "King of Cups",
         "ru": "Король Кубки"
       },
-      "file": "cups_king.png"
+      "file": "cups_king.png",
+      "upright": {
+        "en": [
+          "Fair man",
+          "man of business",
+          "law",
+          "or divinity",
+          "responsible",
+          "disposed to oblige the Querent",
+          "also equity",
+          "art and science",
+          "including those who profess science",
+          "law and art",
+          "creative intelligence."
+        ],
+        "ru": [
+          "Честный человек",
+          "человек бизнеса",
+          "права или божественности",
+          "Ответственный",
+          "распорядился обязывать запрос",
+          "также справедливость",
+          "искусство и наука",
+          "включая тех",
+          "кто исповедует науку",
+          "право и искусство",
+          "Творческий интеллект."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Dishonest",
+          "double-dealing man",
+          "roguery",
+          "exaction",
+          "injustice",
+          "vice",
+          "scandal",
+          "pillage",
+          "considerable loss."
+        ],
+        "ru": [
+          "Нечестный",
+          "двойной человек",
+          "Roguery",
+          "Exaction",
+          "несправедливость",
+          "вице -скандал",
+          "грабеж",
+          "значительная потеря."
+        ]
+      }
     },
     {
       "key": "swords_ace",
@@ -419,7 +2373,43 @@
         "en": "Ace of Swords",
         "ru": "Туз Мечи"
       },
-      "file": "swords_ace.png"
+      "file": "swords_ace.png",
+      "upright": {
+        "en": [
+          "Triumph",
+          "the excessive degree in everything",
+          "conquest",
+          "triumph of force. It is a card of great force",
+          "in love as well as in hatred. The crown may carry a much higher significance than comes usually within the sphere of fortune-telling."
+        ],
+        "ru": [
+          "Триумф",
+          "чрезмерная степень во всем",
+          "завоевание",
+          "триумф силы. Это карта великой силы",
+          "как в любви",
+          "так и в ненависти. Корона может иметь гораздо более высокое значение",
+          "чем обычно в сфере удачи."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "The same",
+          "but the results are disastrous",
+          "another account says--conception",
+          "childbirth",
+          "augmentation",
+          "multiplicity."
+        ],
+        "ru": [
+          "То же самое",
+          "но результаты катастрофические",
+          "Другая учетная запись говорит-заканчивая",
+          "роды",
+          "увеличение",
+          "множественность."
+        ]
+      }
     },
     {
       "key": "swords_two",
@@ -427,7 +2417,46 @@
         "en": "Two of Swords",
         "ru": "Двойка Мечи"
       },
-      "file": "swords_two.png"
+      "file": "swords_two.png",
+      "upright": {
+        "en": [
+          "Conformity and the equipoise which it suggests",
+          "courage",
+          "friendship",
+          "concord in a state of arms",
+          "another reading gives tenderness",
+          "affection",
+          "intimacy. The suggestion of harmony and other favourable readings must be considered in a qualified manner",
+          "as Swords generally are not symbolical of beneficent forces in human affairs."
+        ],
+        "ru": [
+          "Соответствие и рабство",
+          "которое он предлагает",
+          "мужество",
+          "дружба",
+          "согласие в состоянии оружия",
+          "Другое чтение дает нежность",
+          "привязанность",
+          "близость. Предложение о гармонии и других благоприятных показаниях должно рассматриваться квалифицированным образом",
+          "поскольку мечи",
+          "как правило",
+          "не являются символическими для полезных сил в человеческих делах."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Imposture",
+          "falsehood",
+          "duplicity",
+          "disloyalty."
+        ],
+        "ru": [
+          "Имостюр",
+          "ложь",
+          "двуличность",
+          "нелояльность."
+        ]
+      }
     },
     {
       "key": "swords_three",
@@ -435,7 +2464,48 @@
         "en": "Three of Swords",
         "ru": "Тройка Мечи"
       },
-      "file": "swords_three.png"
+      "file": "swords_three.png",
+      "upright": {
+        "en": [
+          "Removal",
+          "absence",
+          "delay",
+          "division",
+          "rupture",
+          "dispersion",
+          "and all that the design signifies naturally",
+          "being too simple and obvious to call for specific enumeration."
+        ],
+        "ru": [
+          "Удаление",
+          "отсутствие",
+          "задержка",
+          "разделение",
+          "разрыв",
+          "дисперсия и все",
+          "что дизайн означает естественно",
+          "слишком прост и очевидно",
+          "чтобы призывать к конкретному перечислению."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Mental alienation",
+          "error",
+          "loss",
+          "distraction",
+          "disorder",
+          "confusion."
+        ],
+        "ru": [
+          "Ментальное отчуждение",
+          "ошибка",
+          "потеря",
+          "отвлечение",
+          "беспорядки",
+          "путаница."
+        ]
+      }
     },
     {
       "key": "swords_four",
@@ -443,7 +2513,43 @@
         "en": "Four of Swords",
         "ru": "Четверка Мечи"
       },
-      "file": "swords_four.png"
+      "file": "swords_four.png",
+      "upright": {
+        "en": [
+          "Vigilance",
+          "retreat",
+          "solitude",
+          "hermit's repose",
+          "exile",
+          "tomb and coffin. It is these last that have suggested the design."
+        ],
+        "ru": [
+          "Бдительность",
+          "отступление",
+          "одиночество",
+          "покой отшельника",
+          "изгнание",
+          "гробница и гроб. Именно эти последние предложили дизайн."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Wise administration",
+          "circumspection",
+          "economy",
+          "avarice",
+          "precaution",
+          "testament."
+        ],
+        "ru": [
+          "Мудрое администрирование",
+          "оборудование",
+          "экономика",
+          "алвариса",
+          "меры предосторожности",
+          "Завет."
+        ]
+      }
     },
     {
       "key": "swords_five",
@@ -451,7 +2557,37 @@
         "en": "Five of Swords",
         "ru": "Пятерка Мечи"
       },
-      "file": "swords_five.png"
+      "file": "swords_five.png",
+      "upright": {
+        "en": [
+          "Degradation",
+          "destruction",
+          "revocation",
+          "infamy",
+          "dishonour",
+          "loss",
+          "with the variants and analogues of these."
+        ],
+        "ru": [
+          "Унижение",
+          "разрушение",
+          "отзыв",
+          "позор",
+          "бесчестный",
+          "потеря",
+          "с вариантами и аналогами их."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "The same",
+          "burial and obsequies."
+        ],
+        "ru": [
+          "Одинаковый",
+          "Похороны и последователи."
+        ]
+      }
     },
     {
       "key": "swords_six",
@@ -459,7 +2595,40 @@
         "en": "Six of Swords",
         "ru": "Шестерка Мечи"
       },
-      "file": "swords_six.png"
+      "file": "swords_six.png",
+      "upright": {
+        "en": [
+          "Journey by water",
+          "route",
+          "way",
+          "envoy",
+          "commissionary",
+          "expedient."
+        ],
+        "ru": [
+          "Путешествие по воде",
+          "маршруту",
+          "пути",
+          "посланнику",
+          "лику",
+          "целесообразным."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Declaration",
+          "confession",
+          "publicity",
+          "one account says that it is a proposal of love."
+        ],
+        "ru": [
+          "Декларация",
+          "признание",
+          "реклама",
+          "В одном из аккаунтов говорится",
+          "что это предложение любви."
+        ]
+      }
     },
     {
       "key": "swords_seven",
@@ -467,7 +2636,48 @@
         "en": "Seven of Swords",
         "ru": "Семерка Мечи"
       },
-      "file": "swords_seven.png"
+      "file": "swords_seven.png",
+      "upright": {
+        "en": [
+          "Design",
+          "attempt",
+          "wish",
+          "hope",
+          "confidence",
+          "also quarrelling",
+          "a plan that may fail",
+          "annoyance. The design is uncertain in its import",
+          "because the significations are widely at variance with each other."
+        ],
+        "ru": [
+          "Дизайн",
+          "попытка",
+          "желание",
+          "надежда",
+          "уверенность",
+          "Также ссора",
+          "план",
+          "который может потерпеть неудачу",
+          "раздражение. Конструкция неясна в своем импорте",
+          "потому что значимые значения широко расходятся друг с другом."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Good advice",
+          "counsel",
+          "instruction",
+          "slander",
+          "babbling."
+        ],
+        "ru": [
+          "Хороший совет",
+          "совет",
+          "наставление",
+          "клевета",
+          "болтовня."
+        ]
+      }
     },
     {
       "key": "swords_eight",
@@ -475,7 +2685,49 @@
         "en": "Eight of Swords",
         "ru": "Восьмерка Мечи"
       },
-      "file": "swords_eight.png"
+      "file": "swords_eight.png",
+      "upright": {
+        "en": [
+          "Bad news",
+          "violent chagrin",
+          "crisis",
+          "censure",
+          "power in trammels",
+          "conflict",
+          "calumny",
+          "also sickness."
+        ],
+        "ru": [
+          "Плохие новости",
+          "жестокий огонь",
+          "кризис",
+          "осуждение",
+          "власть в траммелах",
+          "конфликт",
+          "каломеми",
+          "Также болезнь."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Disquiet",
+          "difficulty",
+          "opposition",
+          "accident",
+          "treachery",
+          "what is unforeseen",
+          "fatality."
+        ],
+        "ru": [
+          "Беспокойство",
+          "трудности",
+          "оппозиция",
+          "авария",
+          "предательство",
+          "Что непредвиденное",
+          "фатальность."
+        ]
+      }
     },
     {
       "key": "swords_nine",
@@ -483,7 +2735,43 @@
         "en": "Nine of Swords",
         "ru": "Девятка Мечи"
       },
-      "file": "swords_nine.png"
+      "file": "swords_nine.png",
+      "upright": {
+        "en": [
+          "Death",
+          "failure",
+          "miscarriage",
+          "delay",
+          "deception",
+          "disappointment",
+          "despair."
+        ],
+        "ru": [
+          "Смерть",
+          "неудача",
+          "выкидыш",
+          "задержка",
+          "обман",
+          "разочарование",
+          "отчаяние."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Imprisonment",
+          "suspicion",
+          "doubt",
+          "reasonable fear",
+          "shame."
+        ],
+        "ru": [
+          "Тюремное заключение",
+          "подозрение",
+          "сомнение",
+          "разумный страх",
+          "стыд."
+        ]
+      }
     },
     {
       "key": "swords_ten",
@@ -491,7 +2779,43 @@
         "en": "Ten of Swords",
         "ru": "Десятка Мечи"
       },
-      "file": "swords_ten.png"
+      "file": "swords_ten.png",
+      "upright": {
+        "en": [
+          "Whatsoever is intimated by the design",
+          "also pain",
+          "affliction",
+          "tears",
+          "sadness",
+          "desolation. It is not especially a card of violent death."
+        ],
+        "ru": [
+          "Что бы ни было намечено дизайном",
+          "Также боль",
+          "страдания",
+          "слезы",
+          "грусть",
+          "опустошение. Это не особенно карта насильственной смерти."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Advantage",
+          "profit",
+          "success",
+          "favour",
+          "but none of these are permanent",
+          "also power and authority."
+        ],
+        "ru": [
+          "Преимущество",
+          "прибыль",
+          "успех",
+          "благосклонность",
+          "но ни один из них не является постоянным",
+          "также власть и власть."
+        ]
+      }
     },
     {
       "key": "swords_page",
@@ -499,7 +2823,40 @@
         "en": "Page of Swords",
         "ru": "Паж Мечи"
       },
-      "file": "swords_page.png"
+      "file": "swords_page.png",
+      "upright": {
+        "en": [
+          "Authority",
+          "overseeing",
+          "secret service",
+          "vigilance",
+          "spying",
+          "examination",
+          "and the qualities thereto belonging."
+        ],
+        "ru": [
+          "Полномочия",
+          "надзор за секретной службой",
+          "бдительность",
+          "шпионаж",
+          "экзамен и качества",
+          "к которым они принадлежат."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "More evil side of these qualities",
+          "what is unforeseen",
+          "unprepared state",
+          "sickness is also intimated."
+        ],
+        "ru": [
+          "Более злая сторона этих качеств",
+          "Что непредвиденное",
+          "неподготовленное состояние",
+          "Болезнь также намекается."
+        ]
+      }
     },
     {
       "key": "swords_knight",
@@ -507,7 +2864,52 @@
         "en": "Knight of Swords",
         "ru": "Рыцарь Мечи"
       },
-      "file": "swords_knight.png"
+      "file": "swords_knight.png",
+      "upright": {
+        "en": [
+          "Skill",
+          "bravery",
+          "capacity",
+          "defence",
+          "address",
+          "enmity",
+          "wrath",
+          "war",
+          "destruction",
+          "opposition",
+          "resistance",
+          "ruin. There is therefore a sense in which the card signifies death",
+          "but it carries this meaning only in its proximity to other cards of fatality."
+        ],
+        "ru": [
+          "Навыки",
+          "храбрость",
+          "способность",
+          "защита",
+          "адрес",
+          "вражда",
+          "гнев",
+          "война",
+          "разрушение",
+          "оппозиция",
+          "сопротивление",
+          "разрушение. Поэтому существует смысл",
+          "в котором карта означает смерть",
+          "но она несет это значение только в его близости к другим картам смертности."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Imprudence",
+          "incapacity",
+          "extravagance."
+        ],
+        "ru": [
+          "Несоблюдение",
+          "неспособность",
+          "экстравагантность."
+        ]
+      }
     },
     {
       "key": "swords_queen",
@@ -515,7 +2917,45 @@
         "en": "Queen of Swords",
         "ru": "Королева Мечи"
       },
-      "file": "swords_queen.png"
+      "file": "swords_queen.png",
+      "upright": {
+        "en": [
+          "Widowhood",
+          "female sadness and embarrassment",
+          "absence",
+          "sterility",
+          "mourning",
+          "privation",
+          "separation."
+        ],
+        "ru": [
+          "Вдова",
+          "женская грусть и смущение",
+          "отсутствие",
+          "бесплодия",
+          "траур",
+          "лишения",
+          "разделение."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Malice",
+          "bigotry",
+          "artifice",
+          "prudery",
+          "bale",
+          "deceit."
+        ],
+        "ru": [
+          "Злоба",
+          "фанатизм",
+          "искусство",
+          "брудеров",
+          "тюк",
+          "обман."
+        ]
+      }
     },
     {
       "key": "swords_king",
@@ -523,7 +2963,42 @@
         "en": "King of Swords",
         "ru": "Король Мечи"
       },
-      "file": "swords_king.png"
+      "file": "swords_king.png",
+      "upright": {
+        "en": [
+          "Whatsoever arises out of the idea of judgment and all its connexions-power",
+          "command",
+          "authority",
+          "militant intelligence",
+          "law",
+          "offices of the crown",
+          "and so forth."
+        ],
+        "ru": [
+          "Как бы то ни было из идеи суждения и всех ее противодействий",
+          "командования",
+          "власти",
+          "воинствующей разведки",
+          "права",
+          "офисов короны и так далее."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Cruelty",
+          "perversity",
+          "barbarity",
+          "perfidy",
+          "evil intention."
+        ],
+        "ru": [
+          "Жестокость",
+          "извращение",
+          "варварство",
+          "персони",
+          "злые намерения."
+        ]
+      }
     },
     {
       "key": "pentacles_ace",
@@ -531,7 +3006,41 @@
         "en": "Ace of Pentacles",
         "ru": "Туз Пентакли"
       },
-      "file": "pentacles_ace.png"
+      "file": "pentacles_ace.png",
+      "upright": {
+        "en": [
+          "Perfect contentment",
+          "felicity",
+          "ecstasy",
+          "also speedy intelligence",
+          "gold."
+        ],
+        "ru": [
+          "Идеальное удовлетворение",
+          "Felicity",
+          "Ecstasy",
+          "также быстрый интеллект",
+          "золото."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "The evil side of wealth",
+          "bad intelligence",
+          "also great riches. In any case it shews prosperity",
+          "comfortable material conditions",
+          "but whether these are of advantage to the possessor will depend on whether the card is reversed or not."
+        ],
+        "ru": [
+          "Злая сторона богатства",
+          "плохой интеллект",
+          "Также великие богатства. В любом случае он показывает процветание",
+          "удобные материальные условия",
+          "но есть ли они преимущество для владельца",
+          "будет зависеть от того",
+          "изменяется ли карта или нет."
+        ]
+      }
     },
     {
       "key": "pentacles_two",
@@ -539,7 +3048,48 @@
         "en": "Two of Pentacles",
         "ru": "Двойка Пентакли"
       },
-      "file": "pentacles_two.png"
+      "file": "pentacles_two.png",
+      "upright": {
+        "en": [
+          "On the one hand it is represented as a card of gaiety",
+          "recreation and its connexions",
+          "which is the subject of the design",
+          "but it is read also as news and messages in writing",
+          "as obstacles",
+          "agitation",
+          "trouble",
+          "embroilment."
+        ],
+        "ru": [
+          "С одной стороны",
+          "он представлен как карта веселья",
+          "отдыха и его связей",
+          "которая является предметом дизайна",
+          "Но это также читается как новости и сообщения в письменной форме",
+          "как препятствия",
+          "агитация",
+          "неприятности",
+          "втяжение."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Enforced gaiety",
+          "simulated enjoyment",
+          "literal sense",
+          "handwriting",
+          "composition",
+          "letters of exchange."
+        ],
+        "ru": [
+          "Принудительное веселье",
+          "моделируемое удовольствие",
+          "буквальный смысл",
+          "почерк",
+          "композиция",
+          "обменные буквы."
+        ]
+      }
     },
     {
       "key": "pentacles_three",
@@ -547,7 +3097,47 @@
         "en": "Three of Pentacles",
         "ru": "Тройка Пентакли"
       },
-      "file": "pentacles_three.png"
+      "file": "pentacles_three.png",
+      "upright": {
+        "en": [
+          "Métier",
+          "trade",
+          "skilled labour",
+          "usually",
+          "however",
+          "regarded as a card of nobility",
+          "aristocracy",
+          "renown",
+          "glory."
+        ],
+        "ru": [
+          "Métier",
+          "торговля",
+          "квалифицированный труд",
+          "Обычно",
+          "однако",
+          "считается картой благородства",
+          "аристократии",
+          "известной",
+          "славы."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Mediocrity",
+          "in work and otherwise",
+          "puerility",
+          "pettiness",
+          "weakness."
+        ],
+        "ru": [
+          "Посредственность",
+          "в работе и в противном случае",
+          "утечка",
+          "мелкость",
+          "слабость."
+        ]
+      }
     },
     {
       "key": "pentacles_four",
@@ -555,7 +3145,36 @@
         "en": "Four of Pentacles",
         "ru": "Четверка Пентакли"
       },
-      "file": "pentacles_four.png"
+      "file": "pentacles_four.png",
+      "upright": {
+        "en": [
+          "The surety of possessions",
+          "cleaving to that which one has",
+          "gift",
+          "legacy",
+          "inheritance."
+        ],
+        "ru": [
+          "Поручительство имущества",
+          "расщепляющее то",
+          "что есть",
+          "дар",
+          "наследие",
+          "наследство."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Suspense",
+          "delay",
+          "opposition."
+        ],
+        "ru": [
+          "Приостановка",
+          "задержка",
+          "оппозиция."
+        ]
+      }
     },
     {
       "key": "pentacles_five",
@@ -563,7 +3182,46 @@
         "en": "Five of Pentacles",
         "ru": "Пятерка Пентакли"
       },
-      "file": "pentacles_five.png"
+      "file": "pentacles_five.png",
+      "upright": {
+        "en": [
+          "The card foretells material trouble above all",
+          "whether in the form illustrated--that is",
+          "destitution--or otherwise. For some cartomancists",
+          "it is a card of love and lovers-wife",
+          "husband",
+          "friend",
+          "mistress",
+          "also concordance",
+          "affinities. These alternatives cannot be harmonized."
+        ],
+        "ru": [
+          "Карточная карта представляет материалы",
+          "прежде всего",
+          "будь то в иллюстрированной форме-то есть лишние-или иначе. Для некоторых карманцев это карта любви и влюбленных",
+          "мужа",
+          "друга",
+          "любовницы",
+          "Также согласие",
+          "сродство. Эти альтернативы не могут быть согласованы."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Disorder",
+          "chaos",
+          "ruin",
+          "discord",
+          "profligacy."
+        ],
+        "ru": [
+          "Беспорядка",
+          "хаос",
+          "руины",
+          "разногласия",
+          "расточительность."
+        ]
+      }
     },
     {
       "key": "pentacles_six",
@@ -571,7 +3229,41 @@
         "en": "Six of Pentacles",
         "ru": "Шестерка Пентакли"
       },
-      "file": "pentacles_six.png"
+      "file": "pentacles_six.png",
+      "upright": {
+        "en": [
+          "Presents",
+          "gifts",
+          "gratification another account says attention",
+          "vigilance now is the accepted time",
+          "present prosperity",
+          "etc."
+        ],
+        "ru": [
+          "Подарки",
+          "подарки",
+          "удовлетворение другого аккаунта говорит",
+          "что внимание",
+          "бдительность сейчас - это принятое время",
+          "настоящее процветание и т. Д."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Desire",
+          "cupidity",
+          "envy",
+          "jealousy",
+          "illusion."
+        ],
+        "ru": [
+          "Желание",
+          "Купидность",
+          "зависть",
+          "ревность",
+          "иллюзия."
+        ]
+      }
     },
     {
       "key": "pentacles_seven",
@@ -579,7 +3271,39 @@
         "en": "Seven of Pentacles",
         "ru": "Семерка Пентакли"
       },
-      "file": "pentacles_seven.png"
+      "file": "pentacles_seven.png",
+      "upright": {
+        "en": [
+          "These are exceedingly contradictory",
+          "in the main",
+          "it is a card of money",
+          "business",
+          "barter",
+          "but one reading gives altercation",
+          "quarrels--and another innocence",
+          "ingenuity",
+          "purgation."
+        ],
+        "ru": [
+          "Они чрезвычайно противоречивы",
+          "В основном это карта денег",
+          "бизнес",
+          "бартер",
+          "Но одно чтение дает ссору",
+          "ссоры-и еще одну невиновность",
+          "изобретательность",
+          "чистку."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Cause for anxiety regarding money which it may be proposed to lend."
+        ],
+        "ru": [
+          "Причина для беспокойства относительно денег",
+          "которые он может быть предложен для кредитования."
+        ]
+      }
     },
     {
       "key": "pentacles_eight",
@@ -587,7 +3311,44 @@
         "en": "Eight of Pentacles",
         "ru": "Восьмерка Пентакли"
       },
-      "file": "pentacles_eight.png"
+      "file": "pentacles_eight.png",
+      "upright": {
+        "en": [
+          "Work",
+          "employment",
+          "commission",
+          "craftsmanship",
+          "skill in craft and business",
+          "perhaps in the preparatory stage."
+        ],
+        "ru": [
+          "Работа",
+          "занятость",
+          "комиссия",
+          "мастерство",
+          "мастерство в ремесле и бизнесе",
+          "возможно",
+          "на подготовительной стадии."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Voided ambition",
+          "vanity",
+          "cupidity",
+          "exaction",
+          "usury. It may also signify the possession of skill",
+          "in the sense of the ingenious mind turned to cunning and intrigue."
+        ],
+        "ru": [
+          "Благоприятные амбиции",
+          "тщеславие",
+          "кулинарность",
+          "эксплуатация",
+          "ростовщичество. Это также может означать владение мастерством",
+          "в смысле гениального разума превратился в хитрую и интригу."
+        ]
+      }
     },
     {
       "key": "pentacles_nine",
@@ -595,7 +3356,39 @@
         "en": "Nine of Pentacles",
         "ru": "Девятка Пентакли"
       },
-      "file": "pentacles_nine.png"
+      "file": "pentacles_nine.png",
+      "upright": {
+        "en": [
+          "Prudence",
+          "safety",
+          "success",
+          "accomplishment",
+          "certitude",
+          "discernment."
+        ],
+        "ru": [
+          "Благоразумие",
+          "безопасность",
+          "успех",
+          "достижение",
+          "уверенность",
+          "проницательность."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Roguery",
+          "deception",
+          "voided project",
+          "bad faith."
+        ],
+        "ru": [
+          "Roguery",
+          "обман",
+          "аннулированный проект",
+          "недобросовестность."
+        ]
+      }
     },
     {
       "key": "pentacles_ten",
@@ -603,7 +3396,47 @@
         "en": "Ten of Pentacles",
         "ru": "Десятка Пентакли"
       },
-      "file": "pentacles_ten.png"
+      "file": "pentacles_ten.png",
+      "upright": {
+        "en": [
+          "Gain",
+          "riches",
+          "family matters",
+          "archives",
+          "extraction",
+          "the abode of a family."
+        ],
+        "ru": [
+          "Получить",
+          "богатство",
+          "Семейные вопросы",
+          "архивы",
+          "добыча",
+          "обитель семьи."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Chance",
+          "fatality",
+          "loss",
+          "robbery",
+          "games of hazard",
+          "sometimes gift",
+          "dowry",
+          "pension."
+        ],
+        "ru": [
+          "Шанс",
+          "смертельность",
+          "потеря",
+          "грабеж",
+          "игры опасности",
+          "Иногда подарок",
+          "приданое",
+          "пенсия."
+        ]
+      }
     },
     {
       "key": "pentacles_page",
@@ -611,7 +3444,43 @@
         "en": "Page of Pentacles",
         "ru": "Паж Пентакли"
       },
-      "file": "pentacles_page.png"
+      "file": "pentacles_page.png",
+      "upright": {
+        "en": [
+          "Application",
+          "study",
+          "scholarship",
+          "reflection another reading says news",
+          "messages and the bringer thereof",
+          "also rule",
+          "management."
+        ],
+        "ru": [
+          "Применение",
+          "обучение",
+          "стипендия",
+          "размышление другое чтение говорит о новостях",
+          "сообщениях и их привлечении",
+          "Также правило",
+          "управление."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Prodigality",
+          "dissipation",
+          "liberality",
+          "luxury",
+          "unfavourable news."
+        ],
+        "ru": [
+          "Продовольственность",
+          "рассеяние",
+          "либеральность",
+          "роскошь",
+          "неблагоприятные новости."
+        ]
+      }
     },
     {
       "key": "pentacles_knight",
@@ -619,7 +3488,43 @@
         "en": "Knight of Pentacles",
         "ru": "Рыцарь Пентакли"
       },
-      "file": "pentacles_knight.png"
+      "file": "pentacles_knight.png",
+      "upright": {
+        "en": [
+          "Utility",
+          "serviceableness",
+          "interest",
+          "responsibility",
+          "rectitude-all on the normal and external plane."
+        ],
+        "ru": [
+          "Полезность",
+          "услуга",
+          "интерес",
+          "ответственность",
+          "прямота на обычной и внешней плоскости."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "inertia",
+          "idleness",
+          "repose of that kind",
+          "stagnation",
+          "also placidity",
+          "discouragement",
+          "carelessness."
+        ],
+        "ru": [
+          "инерция",
+          "безделье",
+          "покоя такого рода",
+          "стагнация",
+          "Также мягкость",
+          "разочарование",
+          "небрежность."
+        ]
+      }
     },
     {
       "key": "pentacles_queen",
@@ -627,7 +3532,39 @@
         "en": "Queen of Pentacles",
         "ru": "Королева Пентакли"
       },
-      "file": "pentacles_queen.png"
+      "file": "pentacles_queen.png",
+      "upright": {
+        "en": [
+          "Opulence",
+          "generosity",
+          "magnificence",
+          "security",
+          "liberty."
+        ],
+        "ru": [
+          "Целостность",
+          "щедрость",
+          "великолепие",
+          "безопасность",
+          "свобода."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Evil",
+          "suspicion",
+          "suspense",
+          "fear",
+          "mistrust."
+        ],
+        "ru": [
+          "Зло",
+          "подозрение",
+          "неизвестность",
+          "страх",
+          "недоверие."
+        ]
+      }
     },
     {
       "key": "pentacles_king",
@@ -635,7 +3572,41 @@
         "en": "King of Pentacles",
         "ru": "Король Пентакли"
       },
-      "file": "pentacles_king.png"
+      "file": "pentacles_king.png",
+      "upright": {
+        "en": [
+          "Valour",
+          "realizing intelligence",
+          "business and normal intellectual aptitude",
+          "sometimes mathematical gifts and attainments of this kind",
+          "success in these paths."
+        ],
+        "ru": [
+          "Доблесть",
+          "осознание интеллекта",
+          "бизнеса и нормальной интеллектуальной способности",
+          "иногда математических даров и достижений такого рода",
+          "успех на этих путях."
+        ]
+      },
+      "reversed": {
+        "en": [
+          "Vice",
+          "weakness",
+          "ugliness",
+          "perversity",
+          "corruption",
+          "peril."
+        ],
+        "ru": [
+          "Вице",
+          "слабость",
+          "безобразие",
+          "извращение",
+          "коррупция",
+          "опасность."
+        ]
+      }
     }
   ]
 }
