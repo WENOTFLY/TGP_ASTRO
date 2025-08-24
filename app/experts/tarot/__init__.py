@@ -12,6 +12,7 @@ from app.core.compose import CardSpec, Layout, save_image
 from app.core.compose import compose as compose_cards
 from app.core.draw import draw_unique
 from app.core.plugins import Plugin
+from app.experts.messages import get_actions, get_cta
 from app.nlp.verifier import Verifier
 from app.nlp.writer import compose_answer
 
@@ -186,11 +187,7 @@ def write(data: dict[str, Any]) -> dict[str, Any]:
     names = [name for name in data["facts"].values()]
     summary = ", ".join(names)
     details = "\n".join(f"{i + 1}. {name}" for i, name in enumerate(names))
-    actions = [
-        "Reflect on how the cards relate to your question.",
-        "Trust your intuition as you interpret the spread.",
-        "Record your insights for future reference.",
-    ]
+    actions = get_actions(PLUGIN_ID, locale)
 
     facts = {
         **data["facts"],
@@ -214,7 +211,7 @@ def verify(data: dict[str, Any]) -> bool:
 
 
 def cta(locale: str) -> list[str]:
-    return ["Draw another card", "Try another spread", "Share"]
+    return get_cta(PLUGIN_ID, locale)
 
 
 plugin = Plugin(

@@ -3,12 +3,14 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, cast
 
 from PIL import Image
 
-from app.core.compose import CardSpec, Layout, compose as compose_cards, save_image
+from app.core.compose import CardSpec, Layout, save_image
+from app.core.compose import compose as compose_cards
 from app.core.plugins import Plugin
+from app.experts.messages import get_actions, get_cta, get_disclaimers
 from app.nlp.verifier import Verifier
 from app.nlp.writer import compose_answer
 
@@ -23,7 +25,7 @@ def form_steps(locale: str) -> list[dict[str, Any]]:
 
 def _load_lexicon(path: Path) -> Dict[str, Any]:
     with path.open("r", encoding="utf-8") as f:
-        return json.load(f)
+        return cast(Dict[str, Any], json.load(f))
 
 
 def prepare(data: dict[str, Any]) -> dict[str, Any]:
@@ -121,24 +123,8 @@ def write(data: dict[str, Any]) -> dict[str, Any]:
         sections.append({"title": name, "body_md": body})
         i += 1
 
-    if locale == "ru":
-        actions = [
-            "Ведите дневник снов.",
-            "Подумайте, какие чувства вызвал сон.",
-            "Поделитесь сном с близким человеком.",
-        ]
-        disclaimers = [
-            "Толкование носит развлекательный характер и не является медицинской помощью."
-        ]
-    else:
-        actions = [
-            "Keep a dream journal.",
-            "Reflect on the feelings in the dream.",
-            "Share the dream with someone you trust.",
-        ]
-        disclaimers = [
-            "This interpretation is for entertainment and not medical advice."
-        ]
+    actions = get_actions(PLUGIN_ID, locale)
+    disclaimers = get_disclaimers(PLUGIN_ID, locale)
 
     verify_facts = {
         **facts,
@@ -163,10 +149,7 @@ def verify(data: dict[str, Any]) -> bool:
 
 
 def cta(locale: str) -> list[str]:
-    return [
-        "Interpret another dream" if locale == "en" else "Расшифровать другой сон",
-        "Share",
-    ]
+    return get_cta(PLUGIN_ID, locale)
 
 
 plugin = Plugin(

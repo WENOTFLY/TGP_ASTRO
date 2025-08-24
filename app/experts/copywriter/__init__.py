@@ -2,13 +2,14 @@ from __future__ import annotations
 
 from datetime import date
 from pathlib import Path
-from typing import Any, cast
+from typing import Any
 
 from PIL import Image, ImageDraw, ImageFont
 
 from app.core.compose import save_image
 from app.core.draw import draw_unique
 from app.core.plugins import Plugin
+from app.experts.messages import get_actions, get_cta, get_section_title
 from app.nlp.verifier import Verifier
 from app.nlp.writer import compose_answer
 
@@ -101,12 +102,20 @@ def write(data: dict[str, Any]) -> dict[str, Any]:
     theme = data["facts"]["theme"]
     brief = data["facts"].get("brief", "")
     summary = f"{theme}: {brief}" if brief else theme
-    sections = [{"title": "Theme" if locale == "en" else "Тема", "body_md": theme}]
+    sections = [
+        {
+            "title": get_section_title(PLUGIN_ID, "theme", locale),
+            "body_md": theme,
+        }
+    ]
     if brief:
         sections.append(
-            {"title": "Brief" if locale == "en" else "Бриф", "body_md": brief}
+            {
+                "title": get_section_title(PLUGIN_ID, "brief", locale),
+                "body_md": brief,
+            }
         )
-    actions = ["Outline main points.", "Draft the text.", "Edit and publish."]
+    actions = get_actions(PLUGIN_ID, locale)
     facts = {
         **data["facts"],
         "summary": summary,
@@ -114,11 +123,9 @@ def write(data: dict[str, Any]) -> dict[str, Any]:
         "actions": actions,
     }
     verifier = Verifier()
-    output = cast(
-        dict[str, Any], verifier.ensure_verified(compose_answer, facts, locale)
-    )
-    output["facts"] = data["facts"]
-    return output
+    result = verifier.ensure_verified(compose_answer, facts, locale)
+    result["facts"] = data["facts"]
+    return result
 
 
 def verify(data: dict[str, Any]) -> bool:
@@ -132,7 +139,7 @@ def verify(data: dict[str, Any]) -> bool:
 
 
 def cta(locale: str) -> list[str]:
-    return ["Clarify", "Try another topic", "Share"]
+    return get_cta(PLUGIN_ID, locale)
 
 
 plugin = Plugin(

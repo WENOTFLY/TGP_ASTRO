@@ -11,6 +11,7 @@ from PIL import Image
 from app.core.assets import ASSET_CACHE
 from app.core.draw import draw_unique
 from app.core.plugins import Plugin
+from app.experts.messages import get_actions, get_cta, get_disclaimers
 from app.nlp.verifier import Verifier
 from app.nlp.writer import compose_answer
 
@@ -177,12 +178,8 @@ def write(data: dict[str, Any]) -> dict[str, Any]:
         body = f"The {name} rune appears {orientation}."
         sections.append({"title": name, "body_md": body})
 
-    actions = [
-        "Reflect on how the runes relate to your question.",
-        "Trust your intuition as you interpret their meanings.",
-        "Record your insights for future reference.",
-    ]
-    disclaimers = ["For entertainment purposes only."]
+    actions = get_actions(PLUGIN_ID, locale)
+    disclaimers = get_disclaimers(PLUGIN_ID, locale)
 
     verify_facts = {
         **facts,
@@ -207,7 +204,7 @@ def verify(data: dict[str, Any]) -> bool:
 
 
 def cta(locale: str) -> list[str]:
-    return ["Draw another rune", "Try another spread", "Share"]
+    return get_cta(PLUGIN_ID, locale)
 
 
 plugin = Plugin(
