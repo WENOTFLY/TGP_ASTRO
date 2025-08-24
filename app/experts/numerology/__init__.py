@@ -103,6 +103,34 @@ def _calc_challenges(birth: date) -> List[int]:
     return [c1, c2, c3, c4]
 
 
+def _calc_transits(
+    name: str, birth: date, target: date, alphabet: Dict[str, int]
+) -> tuple[list[str], int]:
+    age = target.year - birth.year
+    if (target.month, target.day) < (birth.month, birth.day):
+        age -= 1
+    parts = [p for p in name.strip().split() if p]
+    letters: list[str] = []
+    total = 0
+    for part in parts:
+        seq = [ch for ch in part.upper() if ch.isalpha()]
+        if not seq:
+            continue
+        remaining = age
+        idx = 0
+        while True:
+            ch = seq[idx % len(seq)]
+            duration = alphabet[ch]
+            if remaining < duration:
+                letters.append(ch)
+                total += alphabet[ch]
+                break
+            remaining -= duration
+            idx += 1
+    essence = _reduce(total) if letters else 0
+    return letters, essence
+
+
 def _calc_numbers(name: str, birth: date, target: date, locale: str) -> Dict[str, Any]:
     alphabet = _load_alphabet(locale)
     life_path = _reduce(sum(int(d) for d in birth.strftime("%Y%m%d") if d.isdigit()))
@@ -111,6 +139,11 @@ def _calc_numbers(name: str, birth: date, target: date, locale: str) -> Dict[str
     personality = _letters_value(name, alphabet, locale, consonants=True)
     birthday = _reduce(birth.day)
     maturity = _reduce(life_path + expression)
+
+    first = name.split()[0] if name.split() else ""
+    growth_number = _letters_value(first, alphabet, locale) if first else 0
+    transit_letters, essence = _calc_transits(name, birth, target, alphabet)
+    transit_str = " ".join(transit_letters)
 
     year_sum = _reduce(target.year)
     personal_year = _reduce(_reduce(birth.month) + _reduce(birth.day) + year_sum)
@@ -128,6 +161,9 @@ def _calc_numbers(name: str, birth: date, target: date, locale: str) -> Dict[str
         "personality": personality,
         "birthday": birthday,
         "maturity": maturity,
+        "growth_number": growth_number,
+        "essence": essence,
+        "transit_letters": transit_str,
         "personal_year": personal_year,
         "personal_month": personal_month,
         "personal_day": personal_day,
@@ -240,6 +276,9 @@ def write(data: dict[str, Any]) -> dict[str, Any]:
         "personality",
         "birthday",
         "maturity",
+        "growth_number",
+        "essence",
+        "transit_letters",
         "personal_year",
         "personal_month",
         "personal_day",
