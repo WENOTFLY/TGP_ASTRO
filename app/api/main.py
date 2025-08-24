@@ -1,12 +1,13 @@
 from __future__ import annotations
 
+import secrets
 from collections.abc import Iterable
 from datetime import datetime, timedelta
 from typing import Any
 
 from aiogram import Bot
 from aiogram.types import Update
-from fastapi import APIRouter, Depends, FastAPI, HTTPException
+from fastapi import APIRouter, Depends, FastAPI, Header, HTTPException
 from opentelemetry import trace
 from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
 from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
@@ -32,9 +33,19 @@ ALLOWED_UPDATES = [
 ]
 
 router = APIRouter()
-admin_router = APIRouter(prefix="/admin")
-
 settings = get_settings()
+
+
+def auth_dep(x_admin_token: str = Header(..., alias="X-Admin-Token")) -> None:
+    expected = settings.admin_token
+    if expected is None:
+        raise HTTPException(status_code=401, detail="Invalid or missing admin token")
+    if not secrets.compare_digest(x_admin_token, expected):
+        raise HTTPException(status_code=401, detail="Invalid or missing admin token")
+
+
+admin_router = APIRouter(prefix="/admin", dependencies=[Depends(auth_dep)])
+
 bot: Bot | None = Bot(settings.telegram_token) if settings.telegram_token else None
 
 
