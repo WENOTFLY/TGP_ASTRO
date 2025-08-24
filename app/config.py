@@ -28,6 +28,7 @@ class Settings(BaseSettings):
     minio_bucket: str
     telegram_token: str
     telegram_webhook_url: str | None = None
+    admin_token: str | None = None
     stars_api_key: str | None = None
     s3_endpoint: str | None = None
     s3_access_key: str | None = None
