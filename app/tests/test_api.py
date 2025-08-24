@@ -37,8 +37,8 @@ def test_webhook_registration(monkeypatch: pytest.MonkeyPatch) -> None:
     reload(main)
 
     assert main.bot is not None
-    main.bot.set_webhook = AsyncMock()
-    main.dp.feed_update = AsyncMock()
+    main.bot.set_webhook = AsyncMock()  # type: ignore[method-assign]
+    main.dp.feed_update = AsyncMock()  # type: ignore[attr-defined, method-assign]
 
     app = main.create_app()
 
@@ -58,4 +58,4 @@ def test_webhook_registration(monkeypatch: pytest.MonkeyPatch) -> None:
     main.bot.set_webhook.assert_called_once_with(
         "https://example.com", allowed_updates=main.ALLOWED_UPDATES
     )
-    main.dp.feed_update.assert_called_once()
+    main.dp.feed_update.assert_called_once()  # type: ignore[attr-defined]
