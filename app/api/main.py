@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import os
 
-from aiogram import Bot, Dispatcher
+from aiogram import Bot
 from aiogram.types import Update
 from fastapi import APIRouter, FastAPI
+
+from app.bot import dp
 
 ALLOWED_UPDATES = [
     "message",
@@ -17,7 +19,6 @@ router = APIRouter()
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 bot: Bot | None = Bot(TELEGRAM_TOKEN) if TELEGRAM_TOKEN else None
-dp = Dispatcher()
 
 
 @router.get("/health")
