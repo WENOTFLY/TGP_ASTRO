@@ -8,8 +8,10 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import CallbackQuery, Message
 from aiogram.utils.i18n import gettext as _
+from typing import cast
 
 from app.core.payments import PRODUCT_CATALOG, create_order, send_product_invoice
+from app.core.telemetry import TelemetryEvent, track
 from app.db.models import Entitlement, Usage
 from app.db.session import SessionLocal
 
@@ -25,6 +27,9 @@ class MainState(StatesGroup):
 @router.message(Command("start"))
 async def cmd_start(message: Message, state: FSMContext) -> None:
     await state.set_state(MainState.menu)
+    user = message.from_user
+    if user:
+        track(TelemetryEvent.START, user_id=user.id)
     await message.answer(
         _("Welcome! Use the menu below to choose an expert or view tariffs."),
         reply_markup=main_menu(),
@@ -53,8 +58,7 @@ def _history_and_quota(user_id: int) -> tuple[int, list[str]]:
         )
         quota = 0
         if entitlement and (
-            not entitlement.expires_at
-            or entitlement.expires_at > datetime.utcnow()
+            not entitlement.expires_at or entitlement.expires_at > datetime.utcnow()
         ):
             quota = entitlement.quota_left
         usages = (
@@ -82,13 +86,23 @@ async def _send_history(message: Message, user_id: int) -> None:
 @router.message(MainState.menu, Command("profile"))
 @router.message(MainState.menu, Command("history"))
 async def cmd_history(message: Message) -> None:
-    await _send_history(message, message.from_user.id)
+    user = message.from_user
+    if user:
+        await _send_history(message, user.id)
 
 
 @router.callback_query(MainState.menu, F.data == "profile")
 async def cb_profile(callback: CallbackQuery) -> None:
-    if callback.message:
-        await _send_history(callback.message, callback.from_user.id)
+    user = callback.from_user
+    if callback.message and user:
+        msg = cast(Message, callback.message)
+        await _send_history(msg, user.id)
+    if user:
+        track(
+            TelemetryEvent.CTA_CLICK,
+            user_id=user.id,
+            cta="profile",
+        )
     await callback.answer()
 
 
@@ -103,17 +117,32 @@ async def cb_tariffs(callback: CallbackQuery) -> None:
         ]
         text = _("Available tariff plans:") + "\n" + "\n".join(lines)
         await callback.message.answer(text, reply_markup=tariffs_menu())
+    user = callback.from_user
+    if user:
+        track(
+            TelemetryEvent.CTA_CLICK,
+            user_id=user.id,
+            cta="tariffs",
+        )
     await callback.answer()
 
 
 @router.callback_query(MainState.menu, F.data.startswith("buy:"))
 async def cb_buy(callback: CallbackQuery, bot: Bot) -> None:
-    product_id = callback.data.split(":", 1)[1]
+    data = callback.data or ""
+    product_id = data.split(":", 1)[1] if ":" in data else ""
     with SessionLocal() as session:
         order = create_order(
             session, user_id=callback.from_user.id, product_id=product_id
         )
     await send_product_invoice(bot, callback.from_user.id, order)
+    user = callback.from_user
+    if user:
+        track(
+            TelemetryEvent.CTA_CLICK,
+            user_id=user.id,
+            cta=f"buy:{product_id}",
+        )
     await callback.answer()
 
 
@@ -125,4 +154,11 @@ async def cb_back_main(callback: CallbackQuery, state: FSMContext) -> None:
             reply_markup=main_menu(),
         )
     await state.set_state(MainState.menu)
+    user = callback.from_user
+    if user:
+        track(
+            TelemetryEvent.CTA_CLICK,
+            user_id=user.id,
+            cta="back:main",
+        )
     await callback.answer()

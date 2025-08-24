@@ -33,6 +33,7 @@ class Settings(BaseSettings):
     s3_access_key: str | None = None
     s3_secret_key: str | None = None
     s3_bucket: str | None = None
+    otlp_endpoint: str | None = None
 
     model_config = SettingsConfigDict(
         env_file=".env",

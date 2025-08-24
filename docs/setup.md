@@ -69,6 +69,7 @@ cp .env.sample .env
 | `S3_ACCESS_KEY` | ключ доступа к Supabase | раздел 1.3 |
 | `S3_SECRET_KEY` | секретный ключ Supabase | раздел 1.3 |
 | `S3_BUCKET` | имя бакета в Supabase Storage | раздел 1.3 |
+| `OTLP_ENDPOINT` | адрес OTLP‑коллектора для трассировки | задаётся при использовании внешнего OpenTelemetry Collector |
 | `SECRET_KEY` | произвольная длинная строка для подписи токенов и шифрования | сгенерируйте командой `openssl rand -hex 32` |
 | `LOG_LEVEL` | уровень подробности логов (`INFO`, `DEBUG` и так далее) | устанавливается вручную |
 

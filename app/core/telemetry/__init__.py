@@ -14,11 +14,18 @@ class TelemetryEvent(str, Enum):
 
     START = "start"
     FORM_STEP = "form_step"
+    FORM_STARTED = "form_started"
+    FORM_COMPLETED = "form_completed"
     DRAW_STARTED = "draw_started"
+    GENERATION_STARTED = "generation_started"
+    GENERATION_COMPLETED = "generation_completed"
     WRITER_OK = "writer_ok"
+    DELIVERY_STARTED = "delivery_started"
+    DELIVERY_COMPLETED = "delivery_completed"
     QUOTA_SPENT = "quota_spent"
     VERIFIER_OK = "verifier_ok"
     VERIFIER_FAIL = "verifier_fail"
+    CTA_CLICK = "cta_click"
 
 
 def _store_event(
