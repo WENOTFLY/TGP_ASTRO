@@ -23,6 +23,10 @@ ignore_missing_imports = true
 module = ["swisseph", "matplotlib", "matplotlib.*"]
 ignore_missing_imports = true
 
+[[tool.mypy.overrides]]
+module = ["minio", "minio.*", "weasyprint", "weasyprint.*"]
+ignore_missing_imports = true
+
 [tool.pytest.ini_options]
 addopts = "--cov=app --cov-report=term-missing --cov-fail-under=90"
 testpaths = ["app/tests"]
