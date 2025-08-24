@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import os
 from collections.abc import Iterable
 from datetime import datetime, timedelta
 from typing import Any
@@ -12,7 +11,8 @@ from pydantic import BaseModel
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.bot import dp
+from app.bot import dp  # type: ignore[import]
+from app.config import get_settings
 from app.core.assets import ASSET_CACHE
 from app.core.telemetry import TelemetryEvent
 from app.db.models import Event, User
@@ -28,8 +28,8 @@ ALLOWED_UPDATES = [
 router = APIRouter()
 admin_router = APIRouter(prefix="/admin")
 
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-bot: Bot | None = Bot(TELEGRAM_TOKEN) if TELEGRAM_TOKEN else None
+settings = get_settings()
+bot: Bot | None = Bot(settings.telegram_token) if settings.telegram_token else None
 
 
 @router.get("/health")
@@ -45,7 +45,9 @@ async def tg_webhook(update: Update) -> dict[str, str]:
 
 
 @admin_router.get("/metrics")
-def admin_metrics(session: Session = Depends(get_session)) -> dict[str, Any]:
+def admin_metrics(
+    session: Session = Depends(get_session),  # noqa: B008
+) -> dict[str, Any]:
     now = datetime.utcnow()
     since_day = now - timedelta(days=1)
     since_month = now - timedelta(days=30)
@@ -111,7 +113,7 @@ class BroadcastRequest(BaseModel):
 @admin_router.post("/broadcast")
 async def admin_broadcast(
     payload: BroadcastRequest,
-    session: Session = Depends(get_session),
+    session: Session = Depends(get_session),  # noqa: B008
 ) -> dict[str, int]:
     if bot is None:
         raise HTTPException(status_code=503, detail="Bot is not configured")
@@ -134,7 +136,7 @@ def create_app() -> FastAPI:
     @app.on_event("startup")
     async def on_startup() -> None:
         if bot is not None:
-            webhook_url = os.getenv("TELEGRAM_WEBHOOK_URL")
+            webhook_url = settings.telegram_webhook_url
             if webhook_url:
                 await bot.set_webhook(webhook_url, allowed_updates=ALLOWED_UPDATES)
 
